@@ -5,6 +5,7 @@ module.exports = {
     name: 'wink',
     description: 'Random Wink',
     usage: 'wink',
+    aliases: ['flirt'],
     category: '⚔   **Action** :',
     run: async(client, message, args) => {
         const url = 'https://some-random-api.ml/animu/wink';

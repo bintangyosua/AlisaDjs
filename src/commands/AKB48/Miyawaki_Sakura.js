@@ -5,6 +5,8 @@ module.exports = {
 	name: 'sakura',
     description: `Display Information about ${AKB48.Miyawaki_Sakura.name.romaji}.`,
     category: "💃   **AKB48** :",
+    aliases: ['miyawakisakura', 'sakuramiyawaki', 'sakuratan'],
+    usage: "sakura",
 	run: async (client, message, args) => {
         const embed = new Discord.MessageEmbed()
         .setAuthor('HKT48', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/HKT48_logo.svg/1200px-HKT48_logo.svg.png')

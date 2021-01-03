@@ -5,6 +5,7 @@ module.exports = {
     name: 'slap',
     description: 'Random Slaps',
     usage: 'slap',
+    aliases: ['bash'],
     category: '⚔   **Action** :',
     run: async(client, message, args) => {
         const url = 'https://neko-love.xyz/api/v1/slap';

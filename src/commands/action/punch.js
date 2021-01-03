@@ -5,6 +5,7 @@ module.exports = {
     name: 'punch',
     description: 'Random Punch',
     usage: 'punch',
+    aliases: ['strike'],
     category: '⚔   **Action** :',
     run: async(client, message, args) => {
         const url = 'https://neko-love.xyz/api/v1/punch';

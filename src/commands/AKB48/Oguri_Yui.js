@@ -5,6 +5,8 @@ module.exports = {
 	name: 'yuiyui',
     description: `Display Information about ${AKB48.Oguri_Yui.name.romaji}.`,
     category: "💃   **AKB48** :",
+    aliases: ['oguriyui', 'yuioguri'],
+    usage: "yuiyui",
 	run: async (client, message, args) => {
         const embed = new Discord.MessageEmbed()
         .setAuthor('AKB48', 'http://stage48.net/wiki/images/thumb/2/22/AKBLogo.png/210px-AKBLogo.png')

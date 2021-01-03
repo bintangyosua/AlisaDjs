@@ -5,6 +5,7 @@ module.exports = {
     name: 'pat',
     description: 'Random Pats',
     usage: 'pat',
+    aliases: ['beat'],
     category: '⚔   **Action** :',
     run: async(client, message, args) => {
         const url = 'https://some-random-api.ml/animu/pat';

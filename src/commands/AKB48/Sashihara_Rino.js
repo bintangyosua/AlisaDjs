@@ -5,7 +5,9 @@ module.exports = {
 	name: 'sasshii',
     description: `Display Information about ${AKB48.Sashihara_Rino.romaji}.`,
     category: "💃   **AKB48** :",
-	run: async (client, message, args) => {
+    aliases: ['rino', 'sasshiko', 'sasshi', 'sashi', 'sasshi', 'sashiko', 'sasshikoo', 'sashihararino', 'rinosashihara'],
+    usage: "sasshii",
+    run: async (client, message, args) => {
         const embed = new Discord.MessageEmbed()
         .setAuthor('HKT48', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/HKT48_logo.svg/1200px-HKT48_logo.svg.png')
         .setColor('f28ea8')
