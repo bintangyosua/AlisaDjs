@@ -1,6 +1,5 @@
 const { Client, Collection } = require("discord.js");
 const { token, mongoPath, default_prefix } = require("./src/config.json")
-const mongopref = require("discord-mongodb-prefix");
 
 const client = new Client({
     disableEveryone: true
