@@ -1,4 +1,4 @@
-const { ownerID, prefix } = require("../config.json");
+const { ownerID, default_prefix } = require("../config.json");
 const { badwords } = require("../data.json") 
 let cooldown = {}
 
@@ -22,13 +22,14 @@ module.exports.run = async (client, message) => {
 
   }
 
-  if (!message.content.startsWith(prefix)) return;
+  
+  if (!message.content.startsWith(default_prefix)) return;
 
   if (!message.member)
     message.member = await message.guild.members.fetch(message);
 
   const args = message.content
-    .slice(prefix.length)
+    .slice(default_prefix.length)
     .trim()
     .split(/ +/g);
   const cmd = args.shift().toLowerCase();

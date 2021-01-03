@@ -6,7 +6,7 @@
   "QUEUE_LIMIT": 0,
   "MAX_PLAYLIST_SIZE": 10,
   "PRUNING": false,
-  "default_prefix": "#",
+  "default_prefix": "$",
   "ownerID": "454629351607107595",
   "STAY_TIME": 30,
   "DEFAULT_VOLUME": 100,

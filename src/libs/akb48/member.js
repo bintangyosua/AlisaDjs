@@ -26,6 +26,7 @@ var AKB48 = {
             instagram     : 'https://www.instagram.com/345insta/',
             nanagogo      : 'https://7gogo.jp/sashihara-rino',
             twitter       : 'https://twitter.com/345__chan',
+            youtube       : 'https://www.youtube.com/channel/UCfnSEB4atVWATf6vzepHzqw',
             ameblo        : 'https://ameblo.jp/sashihara-rino/',
             vine          : 'https://vine.co/u/1049204132482789376',
             weibo         : 'https://www.weibo.com/u/6348247136?is_hot=1',

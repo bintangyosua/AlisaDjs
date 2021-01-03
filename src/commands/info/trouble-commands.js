@@ -11,7 +11,7 @@ module.exports = {
     .setColor("RED")
     .setThumbnail(client.user.displayAvatarURL())
     .setAuthor(`Trouble commands`, client.user.displayAvatarURL())
-    .setDescription("\`anime-quote\`, \`search\`, \`instagram\`")
+    .setDescription("\`anime-quote\`, \`search\`, \`instagram\`, \`prefix\`")
     .setTimestamp()
     .setFooter(`Requested by ${message.author.tag}`)
     message.channel.send(embed)

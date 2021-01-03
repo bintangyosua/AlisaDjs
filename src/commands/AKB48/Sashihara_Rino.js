@@ -26,6 +26,7 @@ module.exports = {
             { name: '**Ameblo :**', value: `${AKB48.Sashihara_Rino.ameblo}`},
             { name: '**Weibo :**', value: `${AKB48.Sashihara_Rino.weibo}`},
             { name: '**Showroom :**', value: `${AKB48.Sashihara_Rino.showroom}`},
+            { name: '**Youtube :**', value: `${AKB48.Sashihara_Rino.youtube}`},
         )
         .setImage(AKB48.Sashihara_Rino.images)
         .setTimestamp()
