@@ -1,6 +1,5 @@
 const { Client, Collection } = require("discord.js");
 const { prefix, token, mongoPath } = require("./src/config.json")
-const db = require("quick.db")
 
 const client = new Client({
     disableEveryone: true

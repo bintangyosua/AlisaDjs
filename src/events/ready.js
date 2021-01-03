@@ -1,4 +1,3 @@
-const db = require("quick.db")
 const { client } = require("discord.js")
 const { mongoPath } = require('../config.json')
  
