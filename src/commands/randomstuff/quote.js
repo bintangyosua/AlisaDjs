@@ -1,0 +1,28 @@
+const axios = require('axios')
+const { MessageEmbed } = require('discord.js')
+
+module.exports = {
+    name: 'quote',
+    description: 'Random Quotes',
+    category: '🎲   **Random Stuff :**',
+    run: async (client, message, args) => {
+        const url = 'https://no-api-key.com/api/v1/quotes';
+
+        let data2, response;
+        try {
+            response = await axios.get(url);
+            data2 = response.data;
+        } catch (e) {
+            return message.channel.send( data2 `An error has occured, try again!`)
+        }
+
+        const embed = new MessageEmbed()
+            .setFooter(`Requested by ${message.author.tag}`)
+            .setColor(`3caea3`)
+            .setDescription(`${data2.quote}
+- ${data2.author}`)
+            .setTimestamp()
+
+        await message.channel.send(embed)
+    }
+}
