@@ -1,5 +1,22 @@
 const { Client, Collection } = require("discord.js");
-const { token, mongoPath, default_prefix } = require("./src/config.json")
+const { token, mongoPath, default_prefix } = require("./src/config.json");
+const RPC = require('discord-rpc');
+
+const rpc = new RPC.Client({
+    transport: "ipc"
+});
+
+rpc.on("ready", () => {
+    rpc.setActivity({
+        details: "Non Official Cover",
+        state: "Making Discord Bot",
+        startTimestamp: new Date(),
+        largeImageKey: "icon",
+        smallImageKey: "testing",
+    });
+
+    console.log("Rich presence is now active");
+})
 
 const client = new Client({
     disableEveryone: true
@@ -31,5 +48,9 @@ client.prefix = new Map();
 //  MONGODB //
 client.models = { user: require('./src/database/models/user.js') }
 require('./src/database/connect.js')
+
+rpc.login({
+    clientId: "780018362138886144"
+})
 
 client.login(token);
