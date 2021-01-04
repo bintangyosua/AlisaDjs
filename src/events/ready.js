@@ -1,9 +1,16 @@
-const { client } = require("discord.js")
-const { mongoPath } = require('../config.json')
- 
+const { client } = require("discord.js");
+const { mongoPath, default_prefix } = require('../config.json');
+const axios = require('axios');
 
 
 module.exports.run = async (client, message, args) => {
-  console.log("JOIN NOC SERVER" )
-  client.user.setActivity("Roleplay | $help for help | Don't cru don't be shy")
+  
+  setInterval(async ()=>{
+    let textList = [`${client.guilds.cache.size} servers | ${default_prefix}help`, `${client.users.cache.size} users | don't cry don't be shy`]
+    var text = textList[Math.floor(Math.random() * textList.length)];
+    client.user.setActivity(text , { type: 'WATCHING' })
+  },10000) // milliseconds
+  console.log("Lumina already for vacation together")
+
+  
 }
