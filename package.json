@@ -12,7 +12,7 @@
     "array-move": "^3.0.1",
     "ascii-table": "0.0.9",
     "axios": "^0.21.1",
-    "discord-rpc": "^3.1.4",
+    "discord-mongodb-prefix": "^1.0.6",
     "discord.js": "^12.5.1",
     "erit-ytdl": "^0.1.2",
     "ffmpeg-static": "^4.2.7",
