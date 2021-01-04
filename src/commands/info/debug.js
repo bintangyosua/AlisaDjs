@@ -1,7 +1,7 @@
 module.exports = {
     name: 'debug',
     aliases: ['mydebug'],
-    category: 'Infos',
+    category: `📃   **Info :**`,
     usage: 'debug',
 
     run: async (client, message) => {
