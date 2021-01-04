@@ -5,6 +5,8 @@ module.exports = {
     name: 'fakename',
     description: 'Random fake name',
     category: '🎲   **Random Stuff :**',
+    usage: "fakename",
+    aliases: ["fn"],
     run: async (client, message, args) => {
         const url = 'https://api.afumado.net/apiv4/api/fakename.php';
         const url2 = 'https://api.namefake.com/';

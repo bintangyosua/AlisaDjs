@@ -5,6 +5,8 @@ module.exports = {
     name: 'car',
     description: 'Get Random Car Image',
     category: '🎲   **Random Stuff :**',
+    usage: "car",
+    aliases: "cars",
     run: async (client, message, args) => {
         const url = 'https://no-api-key.com/api/v1/car';
 

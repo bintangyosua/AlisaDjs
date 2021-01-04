@@ -5,6 +5,8 @@ module.exports = {
     name: 'instagram',
     description: 'Display instagram account',
     category: '🕹   **Utility :**',
+    usage: "instagram",
+    aliases: ["ig"],
     run: async(client, message, args) => {
         if (!args[0]) {
             return message.channel.send(`Please enter a Username`)

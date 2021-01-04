@@ -4,6 +4,7 @@ module.exports = {
   name: "ban",
   description: "Ban anyone with one shot whithout knowing anyone xD",
   usage: "ban <@user> <reason>",
+  aliases: ['blacklist'],
   category: `🔧   **Moderation** :`,
   run: async (client, message, args) => {
     

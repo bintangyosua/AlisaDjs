@@ -5,6 +5,7 @@ module.exports = {
   description: "Kick anyone with one shot xD",
   usage: "kick <@user> <raeson>",
   category: `🔧   **Moderation** :`,
+  aliases: ['kickmember'],
   run: (client, message, args) => {
     
     if(!message.member.hasPermission("KICK_MEMBERS")) {

@@ -1,8 +1,9 @@
 module.exports = {
   name: "uptime",
-  aliases: ["u"],
+  aliases: ["u", "musicuptime"],
   description: "Check the uptime",
   category: "🎶   Music :",
+  usage: "uptime",
   run: async (client, message, args) => {
     let seconds = Math.floor(message.client.uptime / 1000);
     let minutes = Math.floor(seconds / 60);

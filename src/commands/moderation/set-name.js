@@ -1,10 +1,12 @@
 const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    name: "set-name",
+    name: "setname",
     description: "Set Bot Name",
     ownerOnly: true,
-    category: ":fleur_de_lis:   Owner :",
+    category: `🔧   **Moderation** :`,
+    aliases: ['set-name'],
+    usage: "setname",
     run: async (client, message, args) => {
         const newName = message.content.split(' ')
         

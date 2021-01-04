@@ -5,6 +5,8 @@ module.exports = {
     name: 'kitsune',
     description: 'Random Kitsune',
     category: `🎀   **Anime Related :**`,
+    aliases: ['kitsuneee'],
+    usage: "kitsune",
     run: async (client, message, args) => {
         const url = 'http://neko-love.xyz/api/v1/kitsune';
 

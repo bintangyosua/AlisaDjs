@@ -4,6 +4,8 @@ module.exports = {
   name: "shuffle",
   description: "Shuffle queue",
   category: "🎶   Music :",
+  usage: "shuffle",
+  aliases: ["shufflesong", "shufflemusic", "musicshuffle"],
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.channel.send("There is no queue.").catch(console.error);

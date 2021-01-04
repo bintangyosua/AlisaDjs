@@ -5,6 +5,8 @@ module.exports = {
     name: 'neko',
     description: 'Random neko',
     category: `🎀   **Anime Related :**`,
+    aliases: ['animeneko', 'nekoneko'],
+    usage: "neko",
     run: async (client, message, args) => {
         const url = 'https://api.afumado.net/apiv2/api/nekonime';
 

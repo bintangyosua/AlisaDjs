@@ -7,6 +7,8 @@ module.exports = {
   name: "search",
   description: "Search and select videos to play",
   category: "🎶   Music :",
+  usage: "search <song name>",
+  aliases: ["searchyt", "musicsearch"],
   run: async (client, message, args) => {
     if (!args.length)
       return message

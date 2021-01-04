@@ -6,7 +6,8 @@ module.exports = {
 name: "anime",
   category: `🎀   **Anime Related :**`,
   description: "Get anime information",
-  usage: "anime <anime_name>",
+  aliases: ['searchanime', 'animesearcher'],
+    usage: "anime <anime name>",
   run: (client, message, args) => {
     
     

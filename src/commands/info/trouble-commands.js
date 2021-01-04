@@ -4,7 +4,8 @@ module.exports = {
   name: "trouble-commands",
   description: "Get the detail trouble of this bot",
   category: "📃   **Info :**",
-  aliases: ["troublecmd"],
+  aliases: ["troublecmd", 'trouble-cmd'],
+  usage: "trouble-commands",
   run: async (client, message, args) => {
     console.log(client.queue.size)
     let embed = new MessageEmbed()

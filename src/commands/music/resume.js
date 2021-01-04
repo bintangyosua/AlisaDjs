@@ -5,6 +5,7 @@ module.exports = {
   aliases: ["r"],
   description: "Resume currently playing music",
   category: "🎶   Music :",
+  usage: "resume",
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.reply("There is nothing playing.").catch(console.error);

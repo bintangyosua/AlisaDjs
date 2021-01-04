@@ -3,9 +3,10 @@ const { prefix } = require("../../config.json")
 
 module.exports = {
   name: "remove",
-  aliases: ["rm"],
+  aliases: ["rm", "removemusic"],
   description: "Remove song from the queue",
   category: "🎶   Music :",
+  usage: "remove <number of queue>",
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.channel.send("There is no queue.").catch(console.error);

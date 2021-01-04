@@ -6,6 +6,7 @@ module.exports = {
   description: "Get the weather of anywhere",
   usage: "weather <>",
   category: '🕹   **Utility :**',
+  aliases: ["weathers"],
   run: (client, message, args) => {
     
     

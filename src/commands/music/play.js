@@ -13,6 +13,7 @@ module.exports = {
   aliases: ["p"],
   description: "Plays audio from YouTube or Soundcloud",
   category: "🎶   Music :",
+  usage: "play <name or youtube link or soundcloud link>",
   run: async (client, message, args) => {
     const { channel } = message.member.voice;
 

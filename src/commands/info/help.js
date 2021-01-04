@@ -7,6 +7,7 @@ module.exports = {
     "Get list of all command and even get to know every command detials",
   usage: "help <cmd>",
   category:  `📃   **Info :**`,
+  aliases: ['commands', 'command'],
   run: async (client, message, args) => {
     if (args[0]) {
       const command = await client.commands.get(args[0]);

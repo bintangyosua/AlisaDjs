@@ -5,6 +5,8 @@ module.exports = {
     name: 'cat',
     description: 'Random fact and image cats',
     category: '🎲   **Random Stuff :**',
+    usage: "cat",
+    aliases: ["cats"],
     run: async (client, message, args) => {
         const url = 'https://some-random-api.ml/img/cat';
         const url_facts = 'https://some-random-api.ml/facts/cat';

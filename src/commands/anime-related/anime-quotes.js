@@ -2,9 +2,11 @@ const axios = require('axios')
 const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    name: 'anime-quote',
+    name: 'animequote',
     description: 'Random Anime Quotes',
     category: `🎀   **Anime Related :**`,
+    aliases: ['animequote', 'animequotes'],
+    usage: "animequote",
     run: async (client, message, args) => {
         const url = 'https://animechanapi.xyz/api/quotes/random';
 

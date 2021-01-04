@@ -5,6 +5,8 @@ module.exports = {
   name: "stats",
   description: "Get the detailed information of bot",
   category: "📃   **Info :**",
+  aliases: ['botstats'],
+  usage: "stats",
   run: async (client, message, args) => {
     console.log(client.queue.size)
     let embed = new MessageEmbed()

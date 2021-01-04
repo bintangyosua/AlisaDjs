@@ -4,6 +4,8 @@ module.exports = {
   name: "stop",
   description: "Stops the music",
   category: "🎶   Music :",
+  usage: "stop",
+  aliases: ["musicstop", "stopmusic"],
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
 

@@ -3,9 +3,10 @@ const { prefix } = require("../../config.json")
 
 module.exports = {
   name: "skipto",
-  aliases: ["st"],
+  aliases: ["st", "musicskipto", "musicst"],
   description: "Skip to the selected queue number",
   category: "🎶   Music :",
+  usage: "skip <number of queue>",
   run: async (client, message, args) => {
     if (!args.length || isNaN(args[0]))
       return message

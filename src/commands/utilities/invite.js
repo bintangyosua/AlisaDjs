@@ -4,6 +4,8 @@ module.exports = {
     name: "invite",
     description: "Returns latency and API ping",
     category: '🕹   **Utility :**',
+    usage: "invite",
+    aliases: ["invites", "invitebot", "invitesbot", "invitethisbot"],
     run: async (client, message, args) => {
         
         let lumina = 'https://bit.ly/2LcBcG8'

@@ -3,8 +3,10 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     name: 'waifu',
-    description: 'Random waifu',
+    description: 'get random waifu',
     category: `🎀   **Anime Related :**`,
+    aliases: ['kanojo'],
+    usage: "waifu",
     run: async (client, message, args) => {
         const url = 'https://api.afumado.net/apiv2/api/waifu';
 

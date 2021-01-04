@@ -7,6 +7,7 @@ module.exports = {
   aliases: ["mv"],
   description: "Move songs around in the queue",
   category: "🎶   Music :",
+  usage: "move <number of queue>",
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.channel.send("There is no queue.").catch(console.error);

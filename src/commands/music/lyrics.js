@@ -3,9 +3,10 @@ const lyricsFinder = require("lyrics-finder");
 
 module.exports = {
   name: "lyrics",
-  aliases: ["ly"],
+  aliases: ["ly", "lyric"],
   description: "Get lyrics for the currently playing song",
   category: "🎶   Music :",
+  usage: "lyrics",
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.channel.send("There is nothing playing.").catch(console.error);

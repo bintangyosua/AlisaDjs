@@ -2,9 +2,11 @@ const createBar = require("string-progressbar");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
-  name: "np",
+  name: "nowplaying",
   description: "Show now playing song",
   category: "🎶   Music :",
+  usage: "nowplaying",
+  aliases: ["np"],
   run: async (client, message, args) => {
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.reply("There is nothing playing.").catch(console.error);

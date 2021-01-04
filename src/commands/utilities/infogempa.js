@@ -5,6 +5,8 @@ module.exports = {
     name: 'infogempa',
     description: 'Info Gempa sekitar Indonesia',
     category: '🕹   **Utility :**',
+    usage: "infogempa",
+    aliases: ["infogempaindonesia"],
     run: async(client, message, args) => {
         const url = 'https://api.afumado.net/apiv2/api/infogempa';
 

@@ -6,6 +6,7 @@ module.exports = {
   aliases: ["q"],
   description: "Show the music queue and now playing.",
   category: "🎶   Music :",
+  usage: "queue",
   run: async (client, message, args) => {
     const permissions = message.channel.permissionsFor(message.client.user);
     if (!permissions.has(["MANAGE_MESSAGES", "ADD_REACTIONS"]))
