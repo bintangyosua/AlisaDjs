@@ -7,22 +7,19 @@ module.exports.run = async (client, message) => {
   if (!message.guild) return;
 
   if (!message.member.hasPermission("ADMINISTRATOR")) {
-
     message.content.split(" ").forEach(m => {
       if (is_url(m)) {
         message.delete().catch(err => {})
         return message.channel.send("You are not allowed to send links :/")
       } else if (badwords.find(x => x.toLowerCase() === m.toLowerCase())) {
-
         message.delete().catch(err => {})
         return message.channel.send("You are not allowed to use (**" + m + "**) word here")
-
       }
     })
-
   }
-
   
+  // ----------------------------------- C O M M A N D  H A N D L E R ----------------------------------- //
+
   if (!message.content.startsWith(default_prefix)) return;
 
   if (!message.member)
@@ -41,10 +38,9 @@ module.exports.run = async (client, message) => {
   // If none is found, try to find it by alias
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
-
   if (!command) return;
 
-  //-------------------------------------------- P E R M I S S I O N -------------------------------------------
+  //-------------------------------------------- P E R M I S S I O N ------------------------------------------- //
 
   if (command.botPermission) {
     let neededPerms = []
