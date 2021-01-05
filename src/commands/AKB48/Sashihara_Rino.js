@@ -8,6 +8,11 @@ module.exports = {
     aliases: ['rino', 'sasshiko', 'sasshi', 'sashi', 'sasshi', 'sashiko', 'sasshikoo', 'sashihararino', 'rinosashihara'],
     usage: "sasshii",
     run: async (client, message, args) => {
+
+        let imagelist = [`${AKB48.Sashihara_Rino.image}`, `${AKB48.Sashihara_Rino.image2}`]
+        var image = imagelist[Math.floor(Math.random() * imagelist.length)];
+
+
         const embed = new Discord.MessageEmbed()
         .setAuthor('HKT48', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/HKT48_logo.svg/1200px-HKT48_logo.svg.png')
         .setColor('f28ea8')
@@ -28,7 +33,7 @@ module.exports = {
             { name: '**Showroom :**', value: `${AKB48.Sashihara_Rino.showroom}`},
             { name: '**Youtube :**', value: `${AKB48.Sashihara_Rino.youtube}`},
         )
-        .setImage(AKB48.Sashihara_Rino.images)
+        .setImage(image)
         .setTimestamp()
         .setFooter(`Requested by ${message.author.tag}`)
         message.channel.send(embed);

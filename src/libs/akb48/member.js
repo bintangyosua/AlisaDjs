@@ -32,7 +32,8 @@ var AKB48 = {
             weibo         : 'https://www.weibo.com/u/6348247136?is_hot=1',
             tiktok        : '-',
             showroom      : 'https://www.showroom-live.com/Rino_SASHIHARA',
-            images        : 'http://stage48.net/wiki/images/thumb/2/2d/SashiharaRinoH2018.jpg/280px-SashiharaRinoH2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/2/2d/SashiharaRinoH2018.jpg/280px-SashiharaRinoH2018.jpg',
+            image2        : 'http://stage48.net/wiki/images/b/be/SashiharaRinoChristmas2018.jpg'
     },
     // 1st Generation //
     Itano_Tomomi
@@ -57,7 +58,8 @@ var AKB48 = {
             weibo         : 'https://www.weibo.com/u/5061491055',
             tiktok        : '-',
             showroom      : '-',
-            image         : 'http://stage48.net/wiki/images/thumb/4/4f/ItanoTomomi2018.jpg/280px-ItanoTomomi2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/4/4f/ItanoTomomi2018.jpg/280px-ItanoTomomi2018.jpg',
+            images2       : 'd'
     },
     Kojima_Haruna
     : {
