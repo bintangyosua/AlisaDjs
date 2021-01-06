@@ -22,7 +22,7 @@ module.exports = {
                                                     
     
     let embed = new MessageEmbed()
-    .setAuthor("SUGGESTION:", message.author.avatarURL())
+    .setAuthor("Suggest", client.user.avatarURL())
     .setThumbnail(message.author.avatarURL())
     .setColor("#ff2050")
     .setDescription(args.join(" "))
