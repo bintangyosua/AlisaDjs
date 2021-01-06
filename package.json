@@ -12,10 +12,12 @@
     "array-move": "^3.0.1",
     "ascii-table": "0.0.9",
     "axios": "^0.21.1",
+    "common-tags": "^1.8.0",
     "discord-mongodb-prefix": "^1.0.6",
     "discord.js": "^12.5.1",
     "erit-ytdl": "^0.1.2",
     "ffmpeg-static": "^4.2.7",
+    "he": "^1.2.0",
     "https": "^1.0.0",
     "lyrics-finder": "^21.4.0",
     "moment": "^2.29.1",
@@ -28,6 +30,7 @@
     "soundcloud-downloader": "^0.2.2",
     "string-progressbar": "^1.0.1",
     "weather-js": "^2.0.0",
+    "youtube-search": "^1.1.4",
     "ytdl-core": "^4.3.0"
   },
   "description": ""
