@@ -4,6 +4,10 @@ const { token, mongoPath, default_prefix } = require("./src/config.json");
 const client = new Client({
     disableEveryone: true
 })
+
+
+
+
 // Collections
 client.commands = new Collection();
 client.aliases = new Collection();
