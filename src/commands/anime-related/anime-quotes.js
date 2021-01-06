@@ -20,7 +20,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-            .setTitle("**Random Anime Quote**")
+            .setTitle("**Anime Quote**")
             .setColor(`3caea3`)
             .addFields(
                 { 
