@@ -3,7 +3,7 @@ const random = new Random();
  
 module.exports = {
   name: "joke",
-  category: "🎲   **Random Stuff :**",
+  category: `🎮   **Fun :**`,
   description: "Get Fresh Joke :D",
   usage: "joke",
   aliases: ["jokes"],

@@ -2,14 +2,13 @@ const axios = require('axios')
 const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    name: 'cat',
-    description: 'Random fact and image cats',
-    category: '🎲   **Random Stuff :**',
-    usage: "cat",
-    aliases: ["cats"],
+    name: 'meme',
+    description: 'Random Meme',
+    category: `🎮   **Fun :**`,
+    usage: "meme",
+    aliases: ["memes"],
     run: async (client, message, args) => {
-        const url = 'https://some-random-api.ml/img/cat';
-        const url_facts = 'https://some-random-api.ml/facts/cat';
+        const url = 'https://some-random-api.ml/meme';
 
         let data, response;
         try {
@@ -19,20 +18,12 @@ module.exports = {
             return message.channel.send( data `An error has occured, try again!`)
         }
 
-        let dataFacts, responseFacts;
-        try {
-            responseFacts = await axios.get(url_facts);
-            dataFacts = responseFacts.data;
-        } catch (e) {
-            return message.channel.send( dataFacts `An error has occured, try again!`)
-        }
-
         const embed = new MessageEmbed()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-            .setTitle(dataFacts.fact)
+            .setTitle(data.caption)
             .setColor(`3caea3`)
             .setTimestamp()
-            .setImage(data.link)
+            .setImage(data.image)
 
         await message.channel.send(embed)
     }

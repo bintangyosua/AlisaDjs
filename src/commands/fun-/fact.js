@@ -2,13 +2,13 @@ const axios = require('axios')
 const { MessageEmbed } = require('discord.js')
 
 module.exports = {
-    name: 'meme',
-    description: 'Random Meme',
-    category: '🎲   **Random Stuff :**',
-    usage: "meme",
-    aliases: ["memes"],
+    name: 'fact',
+    description: 'Random facts',
+    category: `🎮   **Fun :**`,
+    usage: "fact",
+    aliases: ["facts"],
     run: async (client, message, args) => {
-        const url = 'https://some-random-api.ml/meme';
+        const url = 'https://no-api-key.com/api/v1/facts';
 
         let data, response;
         try {
@@ -20,10 +20,9 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-            .setTitle(data.caption)
+            .setTitle(data.fact)
             .setColor(`3caea3`)
             .setTimestamp()
-            .setImage(data.image)
 
         await message.channel.send(embed)
     }
