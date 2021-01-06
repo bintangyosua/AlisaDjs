@@ -25,7 +25,7 @@ module.exports = {
             )
         .setImage(AKB48.Maeda_Atsuko.images)
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         message.channel.send(embed);
 	},
 };

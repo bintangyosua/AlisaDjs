@@ -19,7 +19,7 @@ module.exports = {
             .setThumbnail(client.user.displayAvatarURL())
             .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
             .addField('Date Launched', date) 
-            .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
             .setColor(message.guild.me.displayHexColor);
         message.channel.send(embed);

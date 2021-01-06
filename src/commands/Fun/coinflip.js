@@ -13,7 +13,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle('½  Coinflip  ½')
             .setDescription(`I flipped a coin for you, ${message.member}. It was **${result}**!`)
-            .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
             .setColor(message.guild.me.displayHexColor);
         message.channel.send(embed);

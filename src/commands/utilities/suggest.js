@@ -22,11 +22,12 @@ module.exports = {
                                                     
     
     let embed = new MessageEmbed()
-    .setAuthor("SUGGESTION: " + message.author.tag, message.author.avatarURL())
+    .setAuthor("SUGGESTION:", message.author.avatarURL())
     .setThumbnail(message.author.avatarURL())
     .setColor("#ff2050")
     .setDescription(args.join(" "))
     .setTimestamp()
+    .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
     
     
     channel.send(embed).then(m => {

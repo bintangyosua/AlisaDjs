@@ -5,6 +5,7 @@
   "SOUNDCLOUD_CLIENT_ID": "294324164",
   "GOOGLE_API_KEY": "AIzaSyADN8dgaE3hj6aGnBgqcwMBKEIm1YKRYoc",
   "LoL_API_KEY": "RGAPI-41ea0c9d-fcf2-4978-9abd-91aac14f8f44",
+  "feedbackChannelId": "794621938567610388",
   "QUEUE_LIMIT": 0,
   "MAX_PLAYLIST_SIZE": 10,
   "PRUNING": false,

@@ -27,7 +27,7 @@ module.exports = {
         )
         .setImage(AKB48.Oguri_Yui.images)
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         message.channel.send(embed);
 	},
 };

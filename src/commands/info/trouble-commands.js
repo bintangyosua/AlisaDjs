@@ -14,7 +14,7 @@ module.exports = {
     .setAuthor(`Trouble commands`, client.user.displayAvatarURL())
     .setDescription("\`anime-quote\`, \`search\`, \`instagram\`, \`prefix\`")
     .setTimestamp()
-    .setFooter(`Requested by ${message.author.tag}`)
+    .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
     message.channel.send(embed)
   }
 };

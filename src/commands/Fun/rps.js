@@ -18,13 +18,13 @@ module.exports = {
         let result;
         if (userChoice === botChoice) result = 'It\'s a draw!';
         else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Lumina** wins!';
-        else result = `**${message.member.displayName}** wins!`;
+        else result = `**${message.author.tag}** wins!`;
         const embed = new MessageEmbed()
-          .setTitle(`${message.member.displayName} vs. Lumina`)
+          .setTitle(`${message.author.tag} vs. Lumina`)
           .addField('Your Choice:', res[userChoice], true)
           .addField('Lumina\'s Choice', res[botChoice], true)
           .addField('Result', result, true)
-          .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
+          .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
         message.channel.send(embed);

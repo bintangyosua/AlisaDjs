@@ -35,7 +35,7 @@ module.exports = {
         )
         .setImage(image)
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         message.channel.send(embed);
 	},
 };

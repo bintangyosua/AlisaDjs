@@ -29,7 +29,7 @@ let embed = new discord.MessageEmbed()
 .addField("Wind Display", result[0].current.winddisplay, true)
 .setThumbnail(result[0].current.imageUrl)
 .setTimestamp()
-.setFooter(`Requested by ${message.author.tag}`)
+.setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
    message.channel.send(embed)
 } catch(err) {
   return message.channel.send("Unable To Get the data of Given location")

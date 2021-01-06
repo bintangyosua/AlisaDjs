@@ -44,7 +44,7 @@ name: "anime",
         .addField("STATUS", body.data[0].attributes.status, true)
         .addField("NSFW", body.data[0].attributes.nsfw, true)
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         //.setImage(body.data[0].attributes.coverImage.large)
         //try it
         

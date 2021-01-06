@@ -35,7 +35,7 @@ module.exports = {
     .addField(episode.videoLinks[4].name, `[LINK 5](${episode.videoLinks[4].url})`, true)
     .addField(episode.videoLinks[5].name, `[LINK 6](${episode.videoLinks[5].url})`, true)
     .setTimestamp()
-    .setFooter(`Requested by ${message.author.tag}`)
+    .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
     
     message.channel.send(embed)
   

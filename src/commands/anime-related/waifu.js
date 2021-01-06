@@ -24,7 +24,7 @@ module.exports = {
             .setColor(`3caea3`)
             .setImage(data.image)
             .setTimestamp()
-            .setFooter(`Requested by ${message.author.tag}`)
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
 
         await message.channel.send(embed)
     }

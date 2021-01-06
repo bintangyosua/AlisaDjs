@@ -28,7 +28,7 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setFooter(`Requested by ${message.author.tag}`)
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTitle(dataFacts.fact)
             .setColor(`3caea3`)
             .setTimestamp()

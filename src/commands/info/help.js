@@ -25,7 +25,7 @@ module.exports = {
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("GREEN")
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag}`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
 
       return message.channel.send(embed);
     } else {
@@ -38,7 +38,7 @@ module.exports = {
         .setDescription("Join my server or Die :D")
         .setColor("GREEN")
         .setTimestamp()
-        .setFooter(`Requested by ${message.author.tag} | Usage ${prefix}help <command>`)
+        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         .setThumbnail(client.user.displayAvatarURL())
         .setImage('https://cdn.discordapp.com/attachments/792749691761721344/793344681564045372/rainbow.gif')
 

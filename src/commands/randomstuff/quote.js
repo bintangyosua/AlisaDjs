@@ -19,7 +19,7 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setFooter(`Requested by ${message.author.tag}`)
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setColor(`3caea3`)
             .setDescription(`${data2.quote}
 - ${data2.author}`)
