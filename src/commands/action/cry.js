@@ -1,10 +1,11 @@
-const axios = require('axios')
-const { MessageEmbed } = require('discord.js')
+const axios = require('axios');
+const { MessageEmbed } = require('discord.js');
+const emoji = require('../../emojis.json');
 
 module.exports = {
     name: 'cry',
     description: 'Random Cries',
-    category: '⚔   **Action** :',
+    category: `${emoji.sword}   **Action** :`,
     usage: 'cry',
     cooldown: 5000,
     aliases: ["sad"],

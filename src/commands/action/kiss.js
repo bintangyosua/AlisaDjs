@@ -1,11 +1,12 @@
-const axios = require('axios')
-const { MessageEmbed } = require('discord.js')
+const axios = require('axios');
+const { MessageEmbed } = require('discord.js');
+const emoji = require('../../emojis.json');
 
 module.exports = {
     name: 'kiss',
     description: 'Random Kiss',
     usage: 'kiss',
-    category: '⚔   **Action** :',
+    category: `${emoji.sword}   **Action** :`,
     aliases: ["kissu"],
     run: async(client, message, args) => {
         const url = 'https://no-api-key.com/api/v1/kiss';

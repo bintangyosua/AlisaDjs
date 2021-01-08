@@ -1,12 +1,13 @@
-const axios = require('axios')
-const { MessageEmbed } = require('discord.js')
+const axios = require('axios');
+const { MessageEmbed } = require('discord.js');
+const emoji = require('../../emojis.json');
 
 module.exports = {
     name: 'slap',
     description: 'Random Slaps',
     usage: 'slap',
     aliases: ['bash'],
-    category: '⚔   **Action** :',
+    category: `${emoji.sword}   **Action** :`,
     run: async(client, message, args) => {
         const url = 'https://neko-love.xyz/api/v1/slap';
 

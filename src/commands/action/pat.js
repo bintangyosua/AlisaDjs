@@ -1,12 +1,13 @@
-const axios = require('axios')
-const { MessageEmbed } = require('discord.js')
+const axios = require('axios');
+const { MessageEmbed } = require('discord.js');
+const emoji = require('../../emojis.json');
 
 module.exports = {
     name: 'pat',
     description: 'Random Pats',
     usage: 'pat',
     aliases: ['beat'],
-    category: '⚔   **Action** :',
+    category: `${emoji.sword}   **Action** :`,
     run: async(client, message, args) => {
         const url = 'https://some-random-api.ml/animu/pat';
 

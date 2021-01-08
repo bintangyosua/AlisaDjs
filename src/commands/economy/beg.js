@@ -1,9 +1,9 @@
 const discord = require('discord.js')
-
+const emoji = require('../../emojis.json')
   
 module.exports = {
     name: "beg",
-    category: `🛒   Economy :`,
+    category: `${emoji.diamond}   Economy :`,
     description: "beg for money",
     aliases: ['rob'],
     usage: "beg",
