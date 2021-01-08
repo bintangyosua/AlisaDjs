@@ -1,6 +1,7 @@
-const discord = require('discord.js')
-const emoji = require('../../emojis.json')
-  
+const emoji = require('../../emojis.json');
+const { MessageEmbed } = require('discord.js');
+const mongoCurrency = require('discord-mongo-currency');
+
 module.exports = {
     name: "balance",
     category: `${emoji.diamond}   Economy :`,
@@ -8,13 +9,17 @@ module.exports = {
     aliases: ['bal', 'credit', 'credits', 'money'],
     usage: "balance",
     run: async (client, message, args) => {
-       
-        const userData = await client.models.user.findById(message.author.id)
-        if(!userData) await client.models.user.create( { _id: message.author.id } )
-
-        let money = userData.money
-
-        message.channel.send(`You have ${money} coins`)
+        const member = message.mentions.members.first() || message.member;
+ 
+        const user = await mongoCurrency.findUser(member.id, message.guild.id); // Get the user from the database.
+     
+        const embed = new MessageEmbed()
+        .setTitle(`${member.user.username}'s Balance`)
+        .setDescription(`Wallet: ${user.coinsInWallet}
+Bank: ${user.coinsInBank}/${user.bankSpace}
+Total: ${user.coinsInBank + user.coinsInWallet}`);
+        
+        message.channel.send(embed);
 
     }
 }

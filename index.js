@@ -1,6 +1,10 @@
 const { Client, Collection } = require("discord.js");
 const { token, mongoPath, default_prefix } = require("./src/config.json");
+const Levels = require("discord-xp");
+const mongoCurrency = require('discord-mongo-currency');
+
 // ---------------------------------------- COLLECTIONS ---------------------------------------- //
+
 const client = new Client({
     disableEveryone: true
 })
@@ -21,7 +25,8 @@ client.prefix = new Map();
 
 // ---------------------------------------- X P  A N D  L E V E L  S Y S T E M ---------------------------------------- //
 
-// ---------------------------------------- E N D S  O F  X P  A N D  L E V E L  S Y S T E M ---------------------------------------- //
+Levels.setURL(mongoPath);  //This need to be done only once.
+mongoCurrency.connect(mongoPath);
 
 // ---------------------------------------- G O N N A  U S E  E V E N T  H E R E ---------------------------------------- //
 
