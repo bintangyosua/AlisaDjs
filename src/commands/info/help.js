@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js")
-const { prefix } = require('../../config.json')
+const { default_prefix } = require('../../config.json')
+const emoji = require('../../emojis.json')
 
 module.exports = {
   name: "help",
@@ -17,7 +18,6 @@ module.exports = {
       }
 
       let embed = new MessageEmbed()
-        .setTitle(`**__Here\'s an Information about my commands:__**\n`)
         .setAuthor(command.name, client.user.displayAvatarURL())
         .addField("Description", command.description || "Not Provided :(")
         .addField("Aliases", "`" + command.aliases + "`" || "Not Provied")
@@ -33,9 +33,8 @@ module.exports = {
       const command = await client.commands.get(args[0]);
       
       let emx = new MessageEmbed()
-        .setTitle(`**__Here\'s a list of all my commands:__**\n`)
-        .setAuthor(`Lumina Commands List`, client.user.displayAvatarURL()) 
-        .setDescription("Join my server or Die :D")
+        .setAuthor(`Lumina Command List`, client.user.displayAvatarURL()) 
+        .setDescription(`**Full Command list**. \nYou can get more information on a command using \`${default_prefix}help <name of command>\` \nIf you still lost you can join the **[support server](https://discord.gg/uXFZScA)**. You can also invite me in **[here](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647)**`)
         .setColor("GREEN")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
