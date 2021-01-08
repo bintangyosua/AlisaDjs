@@ -1,10 +1,12 @@
 const Levels = require('discord-xp');
+const emoji = require('../../emojis.json')
 
 module.exports = {
     name: 'leaderboard',
     description: 'display global leaderboard',
     aliases: ['lb'],
     usage: 'leaderboard',
+    category: `${emoji.diamond}   Economy :`,
     run: async (client, message, args) => {
         const rawLeaderboard = await Levels.fetchLeaderboard(message.guild.id, 10); // We grab top 10 users with most xp in the current server.
  

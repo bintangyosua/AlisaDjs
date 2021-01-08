@@ -1,12 +1,14 @@
 const Levels = require('discord-xp');
 const mongoCurrency = require('discord-mongo-currency');
 const { MessageEmbed } = require('discord.js');
+const emoji = require('../../emojis.json')
 
 module.exports = {
     name: 'profile',
     description: 'display your profile',
     aliases: ['pf'],
     usage: 'profile',
+    category: `${emoji.diamond}   Economy :`,
     run: async (client, message, args) => {
         const target = message.mentions.users.first() || message.author; // Grab the target.
         

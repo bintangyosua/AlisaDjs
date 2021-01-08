@@ -3,12 +3,12 @@ const emoji = require('../../emojis.json')
 const Levels = require('discord-xp')
 
 module.exports = {
-    name: "rank",
+    name: "level",
     category: `${emoji.diamond}   Economy :`,
     description: "get your level",
-    aliases: ['level'],
-    usage: "rank",
-    cooldown: 5000,
+    aliases: ['xp'],
+    usage: "level",
+    category: `${emoji.diamond}   Economy :`,
     run: async (client, message, args) => {
         const target = message.mentions.users.first() || message.author; // Grab the target.
         
