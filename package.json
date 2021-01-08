@@ -1,11 +1,11 @@
 {
-  "name": "2-discordjs",
-  "version": "1.0.0",
+  "name": "Lumina",
+  "version": "3.5.1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "luxyz",
+  "author": "Luxyz",
   "license": "ISC",
   "dependencies": {
     "anime-scraper": "^3.1.3",
