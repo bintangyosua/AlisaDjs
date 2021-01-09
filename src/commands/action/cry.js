@@ -10,7 +10,13 @@ module.exports = {
     cooldown: 5000,
     aliases: ["sad"],
     run: async(client, message, args) => {
+        if (!args[0]) return message.channel.send('You need to mention someone');
+
+        const member = message.mentions.members.first()
+        const author = message.author.username
+
         const url = 'https://neko-love.xyz/api/v1/cry';
+        let action = ['did you make her cry?']
 
         let data, response;
         try {
@@ -20,10 +26,11 @@ module.exports = {
             return message.channel.send( data `An error has occured, try again!`)
         }
 
+        const msg = `_💬 ${author}, Did you make ${member} cry?_`
         const embed = new MessageEmbed()
             .setColor("ED80A7")
             .setImage(data.url)
 
-        await message.channel.send(embed)
+        await message.channel.send(msg, embed)
     }
 }
