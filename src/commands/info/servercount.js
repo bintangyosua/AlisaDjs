@@ -17,7 +17,7 @@ module.exports = {
       .setDescription(stripIndent`\`\`\`asciidoc\n${counts}\`\`\``)
       .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
-      .setColor(message.guild.me.displayHexColor);
+      .setColor("ED80A7");
     message.channel.send(embed);
     }
 }

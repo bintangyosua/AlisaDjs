@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed()
             .setDescription('`Pinging...`')
-            .setColor(message.guild.me.displayHexColor);    
+            .setColor("ED80A7");    
         const msg = await message.channel.send(embed);
         const timestamp = (message.editedTimestamp) ? message.editedTimestamp : message.createdTimestamp; // Check if edited
         const latency = `\`\`\`ini\n[ ${Math.floor(msg.createdTimestamp - timestamp)}ms ]\`\`\``;

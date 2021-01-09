@@ -31,7 +31,7 @@ module.exports = {
           .setDescription(result.description)
           .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()
-          .setColor(message.guild.me.displayHexColor);
+          .setColor("ED80A7");
         if (message.channel.nsfw) embed.setImage(result.thumbnails.high.url);
         message.channel.send(embed);
     }

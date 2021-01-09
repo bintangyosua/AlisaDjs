@@ -24,7 +24,7 @@ module.exports = {
             (
                 `${data.question}`, `${data.answer}`
             )
-            .setColor(`3caea3`)
+            .setColor("ED80A7")
             .setTimestamp()
 
         await message.channel.send(embed)

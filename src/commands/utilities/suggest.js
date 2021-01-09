@@ -24,7 +24,7 @@ module.exports = {
     let embed = new MessageEmbed()
     .setAuthor("Suggest", client.user.avatarURL())
     .setThumbnail(message.author.avatarURL())
-    .setColor("#ff2050")
+    .setColor("ED80A7")
     .setDescription(args.join(" "))
     .setTimestamp()
     .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))

@@ -15,7 +15,7 @@ module.exports = {
             .setDescription(`I flipped a coin for you, ${message.member}. It was **${result}**!`)
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setColor(message.guild.me.displayHexColor);
+            .setColor("ED80A7");
         message.channel.send(embed);
     },
 };

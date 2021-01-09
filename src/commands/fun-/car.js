@@ -19,7 +19,7 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setColor(`3caea3`)
+            .setColor("ED80A7")
             .setImage(data.image)
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))

@@ -26,7 +26,7 @@ module.exports = {
           .addField('Result', result, true)
           .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()
-          .setColor(message.guild.me.displayHexColor);
+          .setColor("ED80A7");
         message.channel.send(embed);
     }
 }

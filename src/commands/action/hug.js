@@ -21,7 +21,7 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setColor('RANDOM')
+            .setColor("ED80A7")
             .setImage(data.link)
 
         await message.channel.send(embed)

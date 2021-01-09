@@ -21,7 +21,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTitle(data.fact)
-            .setColor(`3caea3`)
+            .setColor("ED80A7")
             .setTimestamp()
 
         await message.channel.send(embed)

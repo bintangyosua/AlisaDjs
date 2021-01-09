@@ -12,7 +12,7 @@ module.exports = {
     run: async (client, message, args) => {
         const target = message.mentions.users.first() || message.author; // Grab the target.
         
-        const user = await Levels.fetch(target.id, message.guild.id); // Selects the target from the database.
+        const user = await Levels.fetch(target.id, message.user.id); // Selects the target from the database.
 
         const member = message.mentions.members.first() || message.member;
  

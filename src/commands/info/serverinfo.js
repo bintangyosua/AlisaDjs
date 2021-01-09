@@ -99,7 +99,7 @@ module.exports = {
       .addField('Server Stats', `\`\`\`asciidoc\n${serverStats}\`\`\``)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
-      .setColor(message.guild.me.displayHexColor);
+      .setColor("ED80A7");
     if (message.guild.description) embed.setDescription(message.guild.description);
     if (message.guild.bannerURL) embed.setImage(message.guild.bannerURL({ dynamic: true }));
     message.channel.send(embed);

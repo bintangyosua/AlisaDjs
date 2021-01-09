@@ -23,7 +23,7 @@ module.exports = {
         .addField("Aliases", "`" + command.aliases + "`" || "Not Provied")
         .addField("Usage", "`" + command.usage + "`" || "Not Provied")
         .setThumbnail(client.user.displayAvatarURL())
-        .setColor("GREEN")
+        .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
 
@@ -35,7 +35,7 @@ module.exports = {
       let emx = new MessageEmbed()
         .setAuthor(`Lumina Command List`, client.user.displayAvatarURL()) 
         .setDescription(`**Full Command list**. \nYou can get more information on a command using \`${default_prefix}help <name of command>\` \nIf you still lost you can join the **[support server](https://discord.gg/uXFZScA)**. You can also invite me in **[here](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647)**`)
-        .setColor("GREEN")
+        .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         .setThumbnail(client.user.displayAvatarURL())

@@ -19,7 +19,7 @@ try {
  
 let embed = new discord.MessageEmbed()
 .setTitle(`Weather - ${result[0].location.name}`)
-.setColor("#ff2050")
+.setColor("ED80A7")
 .setDescription("Temperature units can may be differ some time")
 .addField("Temperature", `${result[0].current.temperature} Celcius`, true)
 .addField("Sky Text", result[0].current.skytext, true)

@@ -12,7 +12,7 @@ module.exports = {
             .setImage(message.guild.iconURL({ dynamic: true, size: 512 }))
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setColor(message.guild.me.displayHexColor);
+            .setColor("ED80A7");
         message.channel.send(embed);
     }
 }

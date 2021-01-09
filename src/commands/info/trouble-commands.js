@@ -9,7 +9,7 @@ module.exports = {
   run: async (client, message, args) => {
     console.log(client.queue.size)
     let embed = new MessageEmbed()
-    .setColor("RED")
+    .setColor("ED80A7")
     .setThumbnail(client.user.displayAvatarURL())
     .setAuthor(`Trouble commands`, client.user.displayAvatarURL())
     .setDescription("\`anime-quote\`, \`search\`, \`instagram\`, \`prefix\`")

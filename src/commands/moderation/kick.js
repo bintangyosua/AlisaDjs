@@ -33,7 +33,7 @@ module.exports = {
     let embed = new discord.MessageEmbed()
     .setTitle("Action: Kick")
     .setDescription(`Kicked ${target} (${target.id})`)
-    .setColor("#ff2050")
+    .setColor("ED80A7")
     .setFooter(`Kicked by ${message.author.username}`);
     
     message.channel.send(embed)

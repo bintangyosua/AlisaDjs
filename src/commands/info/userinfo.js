@@ -59,7 +59,7 @@ module.exports = {
     }
 
       //EMBED COLOR BASED ON member
-      embed.setColor(user.displayHexColor === "#000000" ? "GREEN" : user.displayHexColor)
+      embed.setColor("ED80A7")
 
       //OTHER STUFF 
       embed.setAuthor(user.user.tag, user.user.displayAvatarURL({ dynamic: true }))

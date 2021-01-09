@@ -34,7 +34,7 @@ name: "anime",
        try {
         let embed = new MessageEmbed()
         .setTitle(body.data[0].attributes.titles.en)
-        .setColor("RED")
+        .setColor("ED80A7")
         .setDescription(body.data[0].attributes.synopsis)
         .setThumbnail(body.data[0].attributes.posterImage.original)
         .addField("TOTAL EPISODES", body.data[0].attributes.episodeCount, true)

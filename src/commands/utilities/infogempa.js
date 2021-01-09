@@ -20,7 +20,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setTitle("Info Gempa")
-            .setColor('e9c46a')
+            .setColor("ED80A7")
             .addFields(
                 { 
                     name: '**Kedalaman :**',

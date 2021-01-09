@@ -27,7 +27,7 @@ module.exports = {
     
     let embed = new discord.MessageEmbed()
     .setTitle(`SCRAP - ${cmd}`)
-    .setColor("#ff2050")
+    .setColor("ED80A7")
     .addField(episode.videoLinks[0].name, `[LINK 1](https:${episode.videoLinks[0].url})`, true)
     .addField(episode.videoLinks[1].name, `[LINK 2](https:${episode.videoLinks[1].url})`, true)
     .addField(episode.videoLinks[2].name, `[LINK 3](${episode.videoLinks[2].url})`, true)

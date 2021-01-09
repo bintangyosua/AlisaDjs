@@ -20,7 +20,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-            .setColor(`3caea3`)
+            .setColor("ED80A7")
             .setDescription(`${data2.quote}
 - ${data2.author}`)
             .setTimestamp()

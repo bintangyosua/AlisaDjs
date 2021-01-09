@@ -27,6 +27,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setTitle(`${details.is_verified ? `${details.username} :verified:` : `${details.username}`} ${details.is_private ? '🔒' : ''}`)
             .setDescription(details.biography)
+            .setColor("ED80A7")
             .setThumbnail(details.profile_pic_url)
             .addFields(
                 {
