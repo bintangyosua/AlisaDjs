@@ -9,7 +9,11 @@ module.exports = {
     category: `${emoji.sword}   **Action** :`,
     aliases: ["kissu"],
     run: async(client, message, args) => {
+        if (!args[0]) return message.channel.send('You need to mention a user');
         const url = 'https://no-api-key.com/api/v1/kiss';
+
+        const member = message.mentions.members.first()
+        const author = message.author.username
 
         let data, response;
         try {
@@ -19,10 +23,12 @@ module.exports = {
             return message.channel.send( data `An error has occured, try again!`)
         }
 
+        const msg = `_💬 ${member}, you have been kissed by ${author}_`
+
         const embed = new MessageEmbed()
             .setColor("ED80A7")
             .setImage(data.image)
 
-        await message.channel.send(embed)
+        await message.channel.send(msg, embed)
     }
 }

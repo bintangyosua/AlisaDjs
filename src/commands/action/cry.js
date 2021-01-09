@@ -10,13 +10,13 @@ module.exports = {
     cooldown: 5000,
     aliases: ["sad"],
     run: async(client, message, args) => {
-        if (!args[0]) return message.channel.send('You need to mention someone');
+        if (!args[0]) return message.channel.send('You need to mention a user');
 
-        const member = message.mentions.members.first()
-        const author = message.author.username
+        const member = message.mentions.members.first();
+        const author = message.author.username;
 
         const url = 'https://neko-love.xyz/api/v1/cry';
-        let action = ['did you make her cry?']
+        let action = ['did you make her cry?'];
 
         let data, response;
         try {
