@@ -15,8 +15,8 @@ module.exports = {
             )
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Durandal_Banner.png?token=AOMEPO5DB7DUZXV3GNYS2U277KKU6')
-            .setColor("ED80A7");
+            .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Durandal_Banner.png?token=AOMEPO6VNXXIA6LTO3UOQR277KOY6')
+            .setColor("fee588");
         message.channel.send(embed);
     }
 }
