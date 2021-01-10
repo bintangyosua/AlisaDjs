@@ -38,7 +38,7 @@ module.exports = {
         .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-        .setImage('https://cdn.discordapp.com/attachments/797800866173288468/797801010121801748/Lumina_Banner.png')    
+        .setImage('https://cdn.discordapp.com/attachments/797800866173288468/797852098834333756/Lumina_Banner.png')    
       
         let com = {};
       for (let comm of commands.array()) {
