@@ -15,7 +15,7 @@ module.exports = {
         const timestamp = (message.editedTimestamp) ? message.editedTimestamp : message.createdTimestamp; // Check if edited
         const latency = `\`\`\`ini\n[ ${Math.floor(msg.createdTimestamp - timestamp)}ms ]\`\`\``;
         const apiLatency = `\`\`\`ini\n[ ${Math.round(message.client.ws.ping)}ms ]\`\`\``;
-        embed.setTitle(`Pong!  ${pong}`)
+        embed.setTitle(`Pong!  🏓`)
             .setDescription('')
             .addField('Latency', latency, true)
             .addField('API Latency', apiLatency, true)
