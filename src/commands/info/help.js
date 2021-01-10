@@ -38,9 +38,9 @@ module.exports = {
         .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-        .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Lumina_Banner.png?token=AOMEPO334Q7ARYML6PO5QFK77J4BE')
-
-      let com = {};
+        .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Lumina_Banner.png?token=AOMEPO334Q7ARYML6PO5QFK77J4BE')    
+      
+        let com = {};
       for (let comm of commands.array()) {
         let category = comm.category || "Unknown";
         let name = comm.name;
@@ -56,9 +56,9 @@ module.exports = {
 
         let desc = "`" + value.join("`, `") + "`";
 
-        emx.addField(`${category.toString()}`, desc);
-      }
-
+        emx.addField(`${category.toString()}`, desc)
+          
+      }        
       return message.channel.send(emx);
     }
   }
