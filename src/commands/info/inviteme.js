@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed()
             .setTitle('Invite Me')
-            .setThumbnail(client.user.displayAvatarURL())
+            .setImage('https://cdn.discordapp.com/attachments/797800866173288468/797803534435352616/Invite_Me.png')
             .setDescription(oneLine`
             Click [here](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647)
             to invite me to your server!
@@ -21,7 +21,7 @@ module.exports = {
             )
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setColor("ED80A7");
+            .setColor("755172");
         message.channel.send(embed);
     }
 }
