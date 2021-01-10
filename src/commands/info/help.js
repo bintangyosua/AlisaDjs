@@ -38,7 +38,7 @@ module.exports = {
         .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-        .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Lumina_Title.png?token=AOMEPO6YZSP6WV3YQC4X3KS77J2JK')
+        .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Lumina_Banner.png?token=AOMEPO334Q7ARYML6PO5QFK77J4BE')
 
       let com = {};
       for (let comm of commands.array()) {
