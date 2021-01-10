@@ -39,7 +39,7 @@ module.exports = {
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         .setThumbnail(client.user.displayAvatarURL())
-        .setImage('https://cdn.discordapp.com/attachments/792749691761721344/793344681564045372/rainbow.gif')
+        .setImage('https://media.discordapp.net/attachments/792749691761721344/797663796704444416/Lumina_Title.png?width=864&height=315')
 
       let com = {};
       for (let comm of commands.array()) {
