@@ -38,8 +38,7 @@ module.exports = {
         .setColor("ED80A7")
         .setTimestamp()
         .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-        .setThumbnail(client.user.displayAvatarURL())
-        .setImage('https://media.discordapp.net/attachments/792749691761721344/797663796704444416/Lumina_Title.png?width=864&height=315')
+        .setImage('https://raw.githubusercontent.com/bintangyosua/LuminaDjs/main/src/libs/images/Lumina_Title.png?token=AOMEPO6YZSP6WV3YQC4X3KS77J2JK')
 
       let com = {};
       for (let comm of commands.array()) {
