@@ -74,7 +74,7 @@ function generateQueueEmbed(message, queue) {
 
     const embed = new MessageEmbed()
       .setTitle("Song Queue\n")
-      .setThumbnail(message.guild.iconURL())
+      .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798075653043388436/Queue_Banner.png')
       .setColor("#F8AA2A")
       .setDescription(`**Current Song - [${queue[0].title}](${queue[0].url})**\n\n${info}`)
       .setTimestamp();
