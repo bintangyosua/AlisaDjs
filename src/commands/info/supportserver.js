@@ -15,7 +15,7 @@ module.exports = {
             )
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
-            .setImage('https://cdn.discordapp.com/attachments/797800866173288468/797852071822753813/Durandal_Banner.png')
+            .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798240086142615602/Support_Server.png')
             .setColor("fee588");
         message.channel.send(embed);
     }
