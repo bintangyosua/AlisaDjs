@@ -43,6 +43,7 @@ module.exports = {
       )
       .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
+      .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798134994052448286/Fuka_Banner.png')
       .setColor("ED80A7");
     message.channel.send(embed);
   }
