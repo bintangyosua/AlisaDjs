@@ -35,7 +35,7 @@
     "string-progressbar": "^1.0.1",
     "weather-js": "^2.0.0",
     "youtube-search": "^1.1.4",
-    "ytdl-core": "^4.3.0"
+    "ytdl-core": "^4.4.2"
   },
   "description": ""
 }
