@@ -94,6 +94,7 @@ module.exports = {
       .setTitle(`${playlist.title}`)
       .setDescription(songs.map((song, index) => `${index + 1}. ${song.title}`))
       .setURL(playlist.url)
+      .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798349828261150750/Lumina_Playlist.png')
       .setColor("#F8AA2A")
       .setTimestamp();
 
