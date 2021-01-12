@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed()
             .setTitle('Invite Me')
-            .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798240113057464380/Invite_Me.png')
+            .setImage('https://cdn.discordapp.com/attachments/797800866173288468/798425454163394572/Invite_Me.png')
             .setDescription(oneLine`
             Click [here](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647)
             to invite me to your server!
