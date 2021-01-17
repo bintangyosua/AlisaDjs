@@ -10,7 +10,7 @@ module.exports = {
     category: `${emoji.sword}   **Action** :`,
     run: async(client, message, args) => {
         if (!args[0]) return message.channel.send('You need to mention a user');
-        const url = 'https://neko-love.xyz/api/v1/slap';
+        const url = 'https://nekos.life/api/v2/img/slap';
 
         const member = message.mentions.members.first()
         const author = message.author.username
