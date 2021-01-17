@@ -1,68 +1,78 @@
-//LETS GET STARTED
-const { get } = require("request-promise-native");
-const { MessageEmbed } = require("discord.js")
+﻿const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const Color = `RANDOM`; //Color Name In CAPS - RANDOM For Random
+const Scraper = require("mal-scraper"); //npm i mal-scraper
 
 module.exports = {
-name: "anime",
+  name: "anime",
   category: `🎀   **Anime Related :**`,
   description: "Get anime information",
   aliases: ['searchanime', 'animesearcher'],
-    usage: "anime <anime name>",
-  run: (client, message, args) => {
-    
-    
-    
-    if(!args.length) {
-      return message.channel.send("Please Give Anime Name")
-    }
-    //DEFINE OPTIONS
-    
-    let option = {
-      url: `https://kitsu.io/api/edge/anime?filter[text]=${args.join(" ")}`,
-      method: `GET`,
-      headers: {
-        'Content-Type': "application/vnd.api+json",
-        'Accept': "application/vnd.api+json"
+  usage: "anime <anime name>",
+  run: async (client, message, args) => {
+      //Start
 
-      },
-      json: true
-    }
-    
-    
-    message.channel.send("Fetching The Info").then(msg => {
-      get(option).then(body => {
-       try {
-        let embed = new MessageEmbed()
-        .setTitle(body.data[0].attributes.titles.en)
-        .setColor("ED80A7")
-        .setDescription(body.data[0].attributes.synopsis)
-        .setThumbnail(body.data[0].attributes.posterImage.original)
-        .addField("TOTAL EPISODES", body.data[0].attributes.episodeCount, true)
-        .addField("RATINGS", body.data[0].attributes.averageRating, true)
-        .addField("AGE RATINGS", body.data[0].attributes.ageRatingGuide, true)
-        .addField("TYPE", body.data[0].attributes.subtype, true)
-        .addField("STATUS", body.data[0].attributes.status, true)
-        .addField("NSFW", body.data[0].attributes.nsfw, true)
-        .setTimestamp()
-        .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-        //.setImage(body.data[0].attributes.coverImage.large)
-        //try it
-        
-        
-        message.channel.send(embed)
-        msg.delete();
-        
-       } catch (err) {
-        msg.delete();
-         return message.channel.send("Unable to find this anime");
-       }
-        
-        
-        
-      }                 
-                       
-    )})
-    
+
+      let Text = args.join(" ");
+
+
+      if (!Text) return message.channel.send(`Please Give Something!`);
+
+
+      if (Text.length > 200) return message.channel.send(`Text Limit - 200`);
+
+
+      let Msg = await message.channel.send(`**Searching It For You 🔮**`);
+
+
+      let Replaced = Text.replace(/ +/g, " ");
+
+
+      await Msg.delete();
+
+
+      let Anime;
+
+
+      let Embed;
+
+
+      try {
+
+
+      Anime = await Scraper.getInfoFromName(Replaced);
+
+
+      if (!Anime.genres[0] || Anime.genres[0] === null) Anime.genres[0] = "None";
+
+      Embed = new MessageEmbed()
+      .setColor(Color || "RANDOM")
+      .setURL(Anime.url)
+      .setImage(Anime.picture)
+      .setTitle(Anime.title)
+      .setDescription(Anime.synopsis)
+      .addField(`Type`, Anime.type, true)
+      .addField(`Status`, Anime.status, true)
+      .addField(`Premiered`, Anime.premiered, true)
+      .addField(`Episodes`, Anime.episodes, true)
+      .addField(`Duration`, Anime.duration, true)
+      .addField(`Popularity`, Anime.popularity, true)
+      .addField(`Genres`, Anime.genres.join(", "))
+      .setThumbnail(Anime.picture)
+      .setFooter(`Score - ${Anime.score}`)
+      .setTimestamp();
+
+
+      } catch (error) {
+        return message.channel.send(`No Anime Found!`);
+      };
+
+
+      return message.channel.send(Embed);
+
+
+      //End
+
+
   }
-
-}
+};
