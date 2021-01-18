@@ -1,4 +1,4 @@
-const { default_prefix } = require('../../config.json')
+const { default_prefix } = require('../../utils/config.json')
 
 module.exports = {
     name: "prefix",

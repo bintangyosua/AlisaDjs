@@ -1,4 +1,4 @@
-const emoji = require('../../emojis.json')
+const emoji = require('../../utils/emojis.json')
 const mongoCurrency = require('discord-mongo-currency');
   
 module.exports = {

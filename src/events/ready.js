@@ -1,5 +1,5 @@
 const { client } = require("discord.js");
-const { mongoPath, default_prefix } = require('../config.json');
+const { mongoPath, default_prefix } = require('../utils/config.json');
 const axios = require('axios');
 
 module.exports.run = async (client, message, args) => {  

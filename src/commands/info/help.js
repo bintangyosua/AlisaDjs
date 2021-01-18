@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js")
-const { default_prefix } = require('../../config.json')
-const emoji = require('../../emojis.json')
+const { default_prefix } = require('../../utils/config.json')
+const emoji = require('../../utils/emojis.json')
 
 module.exports = {
   name: "help",

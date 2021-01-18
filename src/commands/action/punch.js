@@ -1,6 +1,6 @@
 const axios = require('axios');
 const { MessageEmbed } = require('discord.js');
-const emoji = require('../../emojis.json');
+const emoji = require('../../utils/emojis.json');
 
 module.exports = {
     name: 'punch',

@@ -2,9 +2,9 @@ const { MessageEmbed } = require("discord.js");
 const { play } = require("../../handlers/play");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID, MAX_PLAYLIST_SIZE, DEFAULT_VOLUME } = require("../../config.json");
+const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID, MAX_PLAYLIST_SIZE, DEFAULT_VOLUME } = require("../../utils/config.json");
 const youtube = new YouTubeAPI(YOUTUBE_API_KEY);
-const { prefix } = require('../../config.json')
+const { prefix } = require('../../utils/config.json')
 
 module.exports = {
   name: "playlist",

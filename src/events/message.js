@@ -1,5 +1,5 @@
-const { ownerID, default_prefix } = require("../config.json");
-const { badwords } = require("../data.json");
+const { ownerID, default_prefix } = require("../utils/config.json");
+const { badwords } = require("../utils/data.json");
 const Levels = require('discord-xp')
 let cooldown = {}
 

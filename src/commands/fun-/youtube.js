@@ -1,4 +1,4 @@
-const { GOOGLE_API_KEY } = require("../../config.json")
+const { GOOGLE_API_KEY } = require("../../utils/config.json")
 const { MessageEmbed } = require('discord.js');
 const search = require('youtube-search');
 const he = require('he');

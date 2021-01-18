@@ -1,5 +1,5 @@
-const { canModifyQueue } = require("../../util/EvobotUtil");
-const { prefix } = require("../../config.json")
+const { canModifyQueue } = require("../../utils/EvobotUtil");
+const { prefix } = require("../../utils/config.json")
 
 module.exports = {
   name: "remove",

@@ -1,7 +1,7 @@
 const Levels = require('discord-xp');
 const mongoCurrency = require('discord-mongo-currency');
 const { MessageEmbed } = require('discord.js');
-const emoji = require('../../emojis.json')
+const emoji = require('../../utils/emojis.json')
 
 module.exports = {
     name: 'profile',

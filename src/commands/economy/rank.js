@@ -1,5 +1,5 @@
 const discord = require('discord.js')
-const emoji = require('../../emojis.json')
+const emoji = require('../../utils/emojis.json')
 const Levels = require('discord-xp')
 
 module.exports = {

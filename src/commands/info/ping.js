@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { pong } = require('../../emojis.json');
+const { pong } = require('../../utils/emojis.json');
 
 module.exports = {
     name: "ping",

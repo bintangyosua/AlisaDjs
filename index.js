@@ -1,5 +1,5 @@
 const { Client, Collection } = require("discord.js");
-const { token, mongoPath, default_prefix } = require("./src/config.json");
+const { token, mongoPath, default_prefix } = require("./src/utils/config.json");
 const Levels = require("discord-xp");
 const mongoCurrency = require('discord-mongo-currency');
 

@@ -1,6 +1,7 @@
 {
   "token": "NzgwMDE4MzYyMTM4ODg2MTQ0.X7o-tQ.yZU_o4GNIzftWBv5w7pYY-YBvd4",
   "prefix": "#",
+  "default_prefix": "$",
   "YOUTUBE_API_KEY": "AIzaSyCif62ywPMNSox0gAkPCiwTqLtfPObf9QM",
   "SOUNDCLOUD_CLIENT_ID": "294324164",
   "GOOGLE_API_KEY": "AIzaSyADN8dgaE3hj6aGnBgqcwMBKEIm1YKRYoc",
@@ -9,7 +10,6 @@
   "QUEUE_LIMIT": 0,
   "MAX_PLAYLIST_SIZE": 10,
   "PRUNING": false,
-  "default_prefix": "$",
   "ownerID": "454629351607107595",
   "STAY_TIME": 30,
   "DEFAULT_VOLUME": 100,

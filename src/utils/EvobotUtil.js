@@ -13,9 +13,9 @@ exports.canModifyQueue = (member) => {
   let config;
   
   try {
-    config = require("../config.json");
+    config = require("./config.json");
   } catch (error) {
     config = null;
   }
 
-const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID, STAY_TIME, MAX_PLAYLIST_SIZE, QUEUE_LIMIT, token, ownerID, prefix, PRUNING, default_prefix, DEFAULT_VOLUME } = require('../config.json')
+const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID, STAY_TIME, MAX_PLAYLIST_SIZE, QUEUE_LIMIT, token, ownerID, prefix, PRUNING, default_prefix, DEFAULT_VOLUME } = require('../utils/config.json')

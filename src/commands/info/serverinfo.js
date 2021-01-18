@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const moment = require('moment');
-const { owner, voice } = require('../../emojis.json');
+const { owner, voice } = require('../../utils/emojis.json');
 const { stripIndent } = require('common-tags');
 const region = {
   'us-central': ':flag_us:  `US Central`',

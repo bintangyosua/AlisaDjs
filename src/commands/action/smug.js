@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const fetch = require("node-fetch");
-const emoji = require('../../emojis.json')
+const emoji = require('../../utils/emojis.json')
 
 module.exports = {
     name: 'smug',
