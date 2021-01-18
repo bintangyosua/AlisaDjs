@@ -31,7 +31,7 @@ mongoCurrency.connect(mongoPath);
 // ---------------------------------------- G O N N A  U S E  E V E N T  H E R E ---------------------------------------- //
 
 // --------------------------------------------- M O N G O D B --------------------------------------------- //
-client.models = { user: require('./src/database/models/user.js') }
+client.models = { user: require('./src/database/models/profile.js') }
 require('./src/database/connect.js')
 
 client.login(token);

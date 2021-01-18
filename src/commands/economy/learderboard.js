@@ -21,7 +21,7 @@ module.exports = {
             .setAuthor('Lumina\'s Leaderboard', client.user.displayAvatarURL())
             .setThumbnail(client.user.displayAvatarURL())
             .setDescription(`\n\n${lb.join("\n\n")}`)
-            .setColor('RED')
+            .setColor('ED80A7')
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
         
