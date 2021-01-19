@@ -7,8 +7,7 @@ const mongoCurrency = require('discord-mongo-currency');
 
 const client = new Client({
     disableEveryone: true
-})
-
+});
 
 
 
@@ -18,6 +17,7 @@ client.aliases = new Collection();
 client.queue = new Map();
 client.vote = new Map();
 client.prefix = new Map();
+
 // Run the command loader
 ["command", "events"].forEach(handler => {
     require(`./src/handlers/${handler}`)(client);
