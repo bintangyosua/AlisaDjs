@@ -1,8 +1,5 @@
 const Instagram = require('scraper-instagram');
-const { username, password } = require('../../utils/insta.json');
-const { MessageEmbed} = require('discord.js');
-const { verified_instagram, lumina } = require('../../utils/emojis.json');
-const { version } = require('moment');
+const { MessageEmbed } = require('discord.js');
 
 // 3689696860%3A0RjraI9zlSn0ao%3A7
 module.exports = {
