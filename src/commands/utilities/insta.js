@@ -33,7 +33,7 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setAuthor(`${insta.verified ? `${Replaced} ✔` : `${Replaced}`} ${insta.private ? '🔒' : ''}`, `${insta.pic}`)
                 .setDescription(`${insta.name} \n${insta.bio}`)
-                .setColor("ED80A7")
+                .setColor("C32AA3")
                 .setThumbnail(insta.pic)
                 .addFields(
                     {

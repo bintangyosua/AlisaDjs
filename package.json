@@ -20,6 +20,7 @@
     "discord.js": "^12.5.1",
     "erit-ytdl": "^0.1.2",
     "ffmpeg-static": "^4.2.7",
+    "get-twitter-info": "^2.0.2",
     "he": "^1.2.0",
     "https": "^1.0.0",
     "lyrics-finder": "^21.4.0",
@@ -36,6 +37,7 @@
     "something-random-on-discord": "0.0.2",
     "soundcloud-downloader": "^0.2.2",
     "string-progressbar": "^1.0.1",
+    "twitter-tokens": "^1.0.3",
     "weather-js": "^2.0.0",
     "youtube-search": "^1.1.4",
     "ytdl-core": "^4.4.2"
