@@ -27,7 +27,7 @@ module.exports = {
         const tweet = new twitter(tokens);
 
         tweet.post('statuses/update', { status: Replaced }).then(result => {
-            console.log('You successfully tweeted this : "' + result.text + '"');
+            message.channel.send('You successfully tweeted this : "' + result.text + '"');
           }).catch(console.error);
 
     }
