@@ -48,7 +48,7 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "Statuses",
+                    name: "Tweets",
                     value: profile.statuses_count,
                     inline: true
                 },
