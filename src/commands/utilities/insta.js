@@ -9,8 +9,8 @@ module.exports = {
     name: 'insta',
     description: 'Display instagram account',
     category: '🕹   **Utility :**',
-    usage: "insta",
-    aliases: ["instaaa"],
+    usage: "insta <username> ",
+    aliases: ["ig", "instagram"],
     run: async(client, message, args) => {
 
         let Text = args.join(" ");
