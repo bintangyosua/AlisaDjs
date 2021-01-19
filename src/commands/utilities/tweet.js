@@ -20,7 +20,7 @@ module.exports = {
         const tokens = {
             consumer_key: tokensss.consumer_key,
             consumer_secret: tokensss.consumer_secret,
-            access_token_key: tokensss.access_token_key,
+            access_token_key: tokensss.access_token,
             access_token_secret: tokensss.access_token_secret
           };
 
