@@ -44,7 +44,7 @@ module.exports = {
                         inline: true
                     },
                     {
-                        name: "Following",
+                        name: "Followings",
                         value: insta.following,
                         inline: true
                 

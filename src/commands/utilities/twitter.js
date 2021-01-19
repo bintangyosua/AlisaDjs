@@ -28,7 +28,7 @@ module.exports = {
         
           const embed = new MessageEmbed()
             .setAuthor(`${profile.verified ? `${profile.screen_name} ✔` : `${profile.screen_name}`} ${profile.protected ? '🔒' : ''}`, `${profile.profile_image_url}`)
-            .setDescription(profile.description)
+            .setDescription(`\*\*${profile.name}\*\* \n${profile.description} \n${profile.url}`)
             .setColor("1b95e0")
             .addFields(
                 {
@@ -37,7 +37,7 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "Following",
+                    name: "Followings",
                     value: profile.friends_count,
                     inline: true
             
@@ -57,7 +57,6 @@ module.exports = {
                     value: profile.created_at,
                     inline: true
                 }, 
-              
             )
             .setImage(profile.profile_banner_url)
             .setTimestamp()
