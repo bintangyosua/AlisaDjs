@@ -1,4 +1,4 @@
-const Instagram = require('instagram-web-api');
+const Instagram = require('scraper-instagram');
 const { username, password } = require('../../utils/insta.json');
 const { MessageEmbed} = require('discord.js');
 const { verified_instagram, lumina } = require('../../utils/emojis.json');
@@ -22,31 +22,33 @@ module.exports = {
         const verified = '<:instagram:800911136001228801>'
 
         
-        const InstaClient = new Instagram({ username, password })
-        await InstaClient.login()
+        const InstaClient = new Instagram();
+        const yourSessionId = '3689696860%3A0RjraI9zlSn0ao%3A7';
+        
 
         try {
-        const instagram = await InstaClient.getUserByUsername({ username: Replaced })
-        
+        const instagram = await InstaClient.authBySessionId(yourSessionId)
+            .catch(err => console.error(err));
+        const insta = await InstaClient.getProfile(Replaced)
             const embed = new MessageEmbed()
-                .setAuthor(`${instagram.is_verified ? `${instagram.username} ✔` : `${instagram.username}`} ${instagram.is_private ? '🔒' : ''}`, instagram.profile_pic_url_hd)
-                .setDescription(`**${instagram.full_name}**  \n${instagram.biography}`)
-                .setThumbnail(instagram.profile_pic_url_hd)
-                .setColor('ED80A7')
+                .setAuthor(`${insta.verified ? `${Replaced} ✔` : `${Replaced}`} ${insta.private ? '🔒' : ''}`, `${insta.pic}`)
+                .setDescription(`${insta.name} \n${insta.bio}`)
+                .setColor("ED80A7")
+                .setThumbnail(insta.pic)
                 .addFields(
                     {
                         name: "Total Posts",
-                        value: instagram.edge_owner_to_timeline_media.count,
+                        value: insta.posts,
                         inline: true
                     },
                     {
                         name: "Followers",
-                        value: instagram.edge_followed_by.count,
+                        value: insta.followers,
                         inline: true
                     },
                     {
                         name: "Following",
-                        value: instagram.edge_follow.count,
+                        value: insta.following,
                         inline: true
                 
                     },
@@ -54,7 +56,6 @@ module.exports = {
                 .setTimestamp()
                 .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
                 message.channel.send(embed)
-        console.log(instagram)
         } catch (error) {
             message.channel.send(`Couldn't find into for that account`)
         } 
