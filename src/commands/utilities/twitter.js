@@ -27,7 +27,7 @@ module.exports = {
         const profile = await getTwitterInfo(tokens, Replaced)
         
           const embed = new MessageEmbed()
-            .setAuthor(`${profile.verified ? `${profile.screen_name} ✔` : `${Replaced}`} ${profile.protected ? '🔒' : ''}`, `${profile.profile_image_url}`)
+            .setAuthor(`${profile.verified ? `${profile.screen_name} ✔` : `${profile.screen_name}`} ${profile.protected ? '🔒' : ''}`, `${profile.profile_image_url}`)
             .setDescription(profile.description)
             .setColor("1b95e0")
             .addFields(
