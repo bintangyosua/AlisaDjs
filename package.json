@@ -37,6 +37,7 @@
     "something-random-on-discord": "0.0.2",
     "soundcloud-downloader": "^0.2.2",
     "string-progressbar": "^1.0.1",
+    "twitter-lite": "^0.14.0",
     "twitter-tokens": "^1.0.3",
     "weather-js": "^2.0.0",
     "youtube-search": "^1.1.4",
