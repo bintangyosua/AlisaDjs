@@ -14,12 +14,15 @@ module.exports = {
   description: "Plays audio from YouTube or Soundcloud",
   category: "🎶   Music :",
   usage: "play <name or youtube link or soundcloud link>",
-  run: async (client, message, args) => {
-    const { channel } = message.member.voice;
+  run: async (message, args) => {
+
+    const Channel = message.member.voice.channel;
+
+    console.log(Channel)
 
     const serverQueue = message.client.queue.get(message.guild.id);
-    if (!channel) return message.reply("You need to join a voice channel first!").catch(console.error);
-    if (serverQueue && channel !== message.guild.me.voice.channel)
+    if (!Channel) return message.reply("You need to join a voice channel first!").catch(console.error);
+    if (serverQueue && Channel !== message.guild.me.voice.channel)
       return message.reply(`You must be in the same channel as ${message.client.user}`).catch(console.error);
 
     if (!args.length)
@@ -27,7 +30,7 @@ module.exports = {
         .reply(`Usage: play \`<YouTube URL | Video Name | Soundcloud URL>\``)
         .catch(console.error);
 
-    const permissions = channel.permissionsFor(message.client.user);
+    const permissions = Channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return message.reply("Cannot connect to voice channel, missing permissions");
     if (!permissions.has("SPEAK"))
@@ -66,7 +69,7 @@ module.exports = {
 
     const queueConstruct = {
       textChannel: message.channel,
-      channel,
+      Channel,
       connection: null,
       songs: [],
       loop: false,
@@ -127,13 +130,13 @@ module.exports = {
     message.client.queue.set(message.guild.id, queueConstruct);
 
     try {
-      queueConstruct.connection = await channel.join();
+      queueConstruct.connection = await Channel.join();
       await queueConstruct.connection.voice.setSelfDeaf(true);
       play(queueConstruct.songs[0], message);
     } catch (error) {
       console.error(error);
       message.client.queue.delete(message.guild.id);
-      await channel.leave();
+      await Channel.leave();
       return message.channel.send(`Could not join the channel: ${error}`).catch(console.error);
     }
   }
