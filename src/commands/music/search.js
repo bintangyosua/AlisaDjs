@@ -16,9 +16,6 @@ module.exports = {
         .catch(console.error);
     if (message.channel.activeCollector)
       return message.reply("A message collector is already active in this channel.");
-
-    console.log(message.member)
-
     if (!message.member.voice.channel)
       return message.reply("You need to join a voice channel first!").catch(console.error);
 

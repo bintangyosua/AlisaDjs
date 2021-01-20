@@ -14,23 +14,22 @@ module.exports = {
   description: "Plays audio from YouTube or Soundcloud",
   category: "🎶   Music :",
   usage: "play <name or youtube link or soundcloud link>",
-  run: async (message, args) => {
+  run: async (client, message, args) => {
+    const { channel } = message.member.voice;
 
-    const Channel = message.member.voice.channel;
-
-    console.log(Channel)
+    console.log(channel)
 
     const serverQueue = message.client.queue.get(message.guild.id);
-    if (!Channel) return message.reply("You need to join a voice channel first!").catch(console.error);
-    if (serverQueue && Channel !== message.guild.me.voice.channel)
+    if (!channel) return message.reply("You need to join a voice channel first!").catch(console.error);
+    if (serverQueue && channel !== message.guild.me.voice.channel)
       return message.reply(`You must be in the same channel as ${message.client.user}`).catch(console.error);
 
     if (!args.length)
       return message
-        .reply(`Usage: play \`<YouTube URL | Video Name | Soundcloud URL>\``)
+        .reply(`Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`)
         .catch(console.error);
 
-    const permissions = Channel.permissionsFor(message.client.user);
+    const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return message.reply("Cannot connect to voice channel, missing permissions");
     if (!permissions.has("SPEAK"))
@@ -46,16 +45,16 @@ module.exports = {
 
     // Start the playlist if playlist url was provided
     if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
-      return message.client.commands.get("playlist").run(message, args);
+      return message.client.commands.get("playlist").execute(message, args);
     } else if (scdl.isValidUrl(url) && url.includes("/sets/")) {
-      return message.client.commands.get("playlist").run(message, args);
+      return message.client.commands.get("playlist").execute(message, args);
     }
 
     if (mobileScRegex.test(url)) {
       try {
         https.get(url, function (res) {
           if (res.statusCode == "302") {
-            return message.client.commands.get("play").run(message, [res.headers.location]);
+            return message.client.commands.get("play").execute(message, [res.headers.location]);
           } else {
             return message.reply("No content could be found at that url.").catch(console.error);
           }
@@ -69,7 +68,7 @@ module.exports = {
 
     const queueConstruct = {
       textChannel: message.channel,
-      Channel,
+      channel,
       connection: null,
       songs: [],
       loop: false,
@@ -130,13 +129,13 @@ module.exports = {
     message.client.queue.set(message.guild.id, queueConstruct);
 
     try {
-      queueConstruct.connection = await Channel.join();
+      queueConstruct.connection = await channel.join();
       await queueConstruct.connection.voice.setSelfDeaf(true);
       play(queueConstruct.songs[0], message);
     } catch (error) {
       console.error(error);
       message.client.queue.delete(message.guild.id);
-      await Channel.leave();
+      await channel.leave();
       return message.channel.send(`Could not join the channel: ${error}`).catch(console.error);
     }
   }

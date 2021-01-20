@@ -8,9 +8,6 @@ module.exports = {
     usage: "car",
     aliases: "cars",
     run: async (client, message, args) => {
-
-        console.log(message.member.voice.channel)
-    
         const url = 'https://no-api-key.com/api/v1/car';
 
         let data, response;
