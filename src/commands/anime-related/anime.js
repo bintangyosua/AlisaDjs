@@ -44,20 +44,37 @@ module.exports = {
 
 
       if (!Anime.genres[0] || Anime.genres[0] === null) Anime.genres[0] = "None";
+      if (!Anime.studios[0] || Anime.studios[0] === null) Anime.studios[0] = "None";
+
+      var string = Anime.synopsis;
+      var length = 1010;
+      var trimmedString = string.substring(0, length);
 
       Embed = new MessageEmbed()
       .setColor(Color || "RANDOM")
       .setURL(Anime.url)
       .setImage(Anime.picture)
       .setTitle(Anime.title)
-      .setDescription(Anime.synopsis)
-      .addField(`Type`, Anime.type, true)
-      .addField(`Status`, Anime.status, true)
-      .addField(`Premiered`, Anime.premiered, true)
-      .addField(`Episodes`, Anime.episodes, true)
-      .addField(`Duration`, Anime.duration, true)
-      .addField(`Popularity`, Anime.popularity, true)
-      .addField(`Genres`, Anime.genres.join(", "))
+      .addField(`Information`,
+`\*\*Type:\*\* ${Anime.type}
+\*\*Status:\*\* ${Anime.status}
+\*\*Aired:\*\* ${Anime.aired}
+\*\*English Title:\*\* ${Anime.englishTitle}
+\*\*Japanese Title:\*\* ${Anime.japaneseTitle}
+\*\*Episodes:\*\* ${Anime.episodes}
+\*\*Source:\*\* ${Anime.source}
+\*\*Duration:\*\* ${Anime.duration}
+\*\*Rating:\*\* ${Anime.rating}
+\*\*Status:\*\* ${Anime.status}
+\*\*Genres:\*\* ${Anime.genres.join(", ")}
+\*\*Score:\*\* ${Anime.score} \`${Anime.scoreStats}\` 
+\*\*Ranked:\*\* ${Anime.ranked}
+\*\*Popularity:\*\* ${Anime.popularity}
+\*\*Members:\*\* ${Anime.members}
+\*\*Favorites:\*\* ${Anime.favorites}
+\*\*Studios:\*\* ${Anime.studios.join(", ")}
+      `)
+      .addField(`Description`, `${trimmedString}...`)
       .setThumbnail(Anime.picture)
       .setFooter(`Score - ${Anime.score}`)
       .setTimestamp();
@@ -66,6 +83,8 @@ module.exports = {
       } catch (error) {
         return message.channel.send(`No Anime Found!`);
       };
+
+      console.log(Anime)
 
 
       return message.channel.send(Embed);
