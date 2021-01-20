@@ -22,24 +22,17 @@ module.exports = {
             
             //Response of type @Page object
             const summary = await page.summary();
-
-            const ExpertSummary = await wiki.search('Batman')
             
             const embed = new MessageEmbed()
                 .setAuthor('Wikipedia', summary.thumbnail.source)
                 .setColor('ED80A7')
                 .setThumbnail(summary.thumbnail.source)
-                .setDescription(`\*\*${summary.title}\*\* \n${summary.extract}`)
-                .setImage(summary.originalimage.source)
+                .setDescription(`\*\*[${summary.title}](${summary.content_urls.desktop.page})\*\* \n${summary.extract}`)
+                
                 .addFields(
                     {
                         name: 'Description',
-                        value: summary.description,
-                        inline: true
-                    },
-                    {
-                        name: 'Urls',
-                        value: `Desktop: ${summary.content_urls.desktop.page} \nMobile: ${summary.content_urls.mobile.page}`,
+                        value: `${summary.description} \n\n`,
                         inline: true
                     }
                 )
@@ -49,7 +42,7 @@ module.exports = {
             
             
             
-            console.log(ExpertSummary);
+            console.log(summary);
             //Response of type @wikiSummary - contains the intro and the main image
         } catch (error) {
             console.log(error);
