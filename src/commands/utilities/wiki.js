@@ -27,15 +27,10 @@ module.exports = {
                 .setAuthor('Wikipedia', summary.thumbnail.source)
                 .setColor('ED80A7')
                 .setThumbnail(summary.thumbnail.source)
-                .setDescription(`\*\*[${summary.title}](${summary.content_urls.desktop.page})\*\* \n${summary.extract}`)
-                
-                .addFields(
-                    {
-                        name: 'Description',
-                        value: `${summary.description} \n\n`,
-                        inline: true
-                    }
-                )
+                .setDescription(`\*\*[${summary.title}](${summary.content_urls.desktop.page})\*\*
+\*\*Description\*\*
+\`${summary.description}\`
+${summary.extract}`)
                 .setTimestamp()
                 .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             message.channel.send(embed)
