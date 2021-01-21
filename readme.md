@@ -26,7 +26,7 @@
 > Lumina is a Discord Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
 
 
-## Using the Official Mantaro Bot
+## Using the Official Lumina Bot
 
 **Just one [click](https://discord.gg/uXFZScA) and you can add Lumina to your own server and enjoy its full feature set!**
 
