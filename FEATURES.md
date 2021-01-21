@@ -3,8 +3,8 @@
 > Note: The default prefix is '$'
 
 ### Action
-Require to mention member \`cry hug kiss pat punch slap`
-Not require to mention member \`smug wink`
+Require to mention member **cry hug kiss pat punch slap**
+Not require to mention member **smug wink**
 
 `$cry <username>`
 
