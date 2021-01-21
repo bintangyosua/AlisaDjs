@@ -5,7 +5,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'insta',
     description: 'Display instagram account',
-    category: '🕹   **Utility :**',
+    category: '🕹   **Misc :**',
     usage: "insta <username> ",
     aliases: ["ig", "instagram"],
     run: async(client, message, args) => {

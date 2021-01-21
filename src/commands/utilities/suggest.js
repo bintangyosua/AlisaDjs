@@ -5,7 +5,7 @@ module.exports = {
   name: "suggest",
   usage: "suggest <message>",
   description: "Send your Suggestion",
-  category: '🕹   **Utility :**',
+  category: '🕹   **Misc :**',
   aliases: ['suggestions', 'suggestion'],
   run: (client, message, args) => {
     

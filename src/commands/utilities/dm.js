@@ -1,7 +1,7 @@
 module.exports = {
     name: 'dm',
     description: 'dm ',
-    category: '🕹   **Utility :**',
+    category: '🕹   **Misc :**',
     usage: "dm",
     aliases: ["directmessage"],
     run: async(client, message, args) => {

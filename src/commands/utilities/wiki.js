@@ -5,7 +5,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'wiki',
     description: 'Scrap keyword from Wiki search engine.',
-    category: '🕹   **Utility :**',
+    category: '🕹   **Misc :**',
     usage: "wiki <keyword> ",
     aliases: [" "],
     run: async(client, message, args) => {

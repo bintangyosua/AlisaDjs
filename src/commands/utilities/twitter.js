@@ -5,7 +5,7 @@ const { MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'twitter',
     description: 'Display twitter account',
-    category: '🕹   **Utility :**',
+    category: '🕹   **Misc :**',
     usage: "twitter <username> ",
     aliases: ["twt"],
     run: async(client, message, args) => {

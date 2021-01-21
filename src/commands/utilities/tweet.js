@@ -5,7 +5,7 @@ const twitter = require('twitter-lite');
 module.exports = {
     name: 'tweet',
     description: 'Display twitter account',
-    category: '🕹   **Utility :**',
+    category: '🕹   **Misc :**',
     usage: "twitter <username> ",
     aliases: ["twt"],
     ownerOnly: true,
