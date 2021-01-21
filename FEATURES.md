@@ -13,7 +13,6 @@ Not require to mention member `smug wink`
 Get an information about AKB48 Members 
 
 `tomochin yukirin kitarie nyanchan acchan miichan sakura sae mion yuiri yuiyui nachan yuko sasshii paruru juri takamina mayuyu zukky yuihan`
-* `$sasshi`
 
 ### 🈶 Anime Related
 all things related to anime are here
@@ -39,7 +38,6 @@ Not Random Stuff `aki eject emojify rps`
 * `$aki` Playing Aki`
 * `$eject <username> Among Us Eject`
 * `$emojify <words>`
-
 * `$rps <rock/paper/scissors>`
 
 ### 📃 Info
@@ -88,7 +86,7 @@ you like music? You can listen to music with the command below
 `$playlist linkin park meteora`
 
 ### 🕹 Utilities
-Other features like searching information from someone instagra, someone's twitter, weather at a specific location
+Other features like searching information from instagram, twitter, weather at a specific location
 
 `insta suggest twitter weather wiki wikisearch`
 * `$insta <@insta_username>`

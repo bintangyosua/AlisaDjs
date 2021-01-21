@@ -39,7 +39,8 @@ module.exports = {
       .addField(
         'Links', 
         '**[Invite Me](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647) | ' +
-        '[Support Server](https://discord.gg/uXFZScA)**'
+        '[Support Server](https://discord.gg/uXFZScA) | ' +
+        '[Github](https://github.com/bintangyosua/Lumina/)**'
       )
       .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

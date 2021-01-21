@@ -11,7 +11,8 @@ module.exports = {
             .setTitle('Support Server')
             .setDescription('Click [here](https://discord.gg/uXFZScA) to join the Lumina Support Server!')
             .addField('Other Links', 
-            '**[Invite Me](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647)**'
+            '**[Invite Me](https://discord.com/oauth2/authorize?client_id=780018362138886144&scope=bot&permissions=2147483647) | ' +
+            '[Github](https://github.com/bintangyosua/Lumina/)**'
             )
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()

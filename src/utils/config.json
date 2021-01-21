@@ -1,6 +1,6 @@
 {
   "token": "NzgwMDE4MzYyMTM4ODg2MTQ0.X7o-tQ.yZU_o4GNIzftWBv5w7pYY-YBvd4",
-  "prefix": "#",
+  "owner_prefix": "<",
   "default_prefix": "$",
   "YOUTUBE_API_KEY": "AIzaSyCif62ywPMNSox0gAkPCiwTqLtfPObf9QM",
   "SOUNDCLOUD_CLIENT_ID": "294324164",

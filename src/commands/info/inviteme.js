@@ -17,7 +17,8 @@ module.exports = {
             `)
             .addField('Other Links', 
             '**[Support Server](https://discord.gg/uXFZScA) | ' +
-            '[Serah](https://discord.com/oauth2/authorize?client_id=670865375470288906&scope=bot&permissions=2147483647&response_type=code)**'
+            '[Serah](https://discord.com/oauth2/authorize?client_id=670865375470288906&scope=bot&permissions=2147483647&response_type=code) | ' +
+            '[Github](https://github.com/bintangyosua/Lumina/)**'
             )
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp()

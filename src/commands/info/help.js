@@ -22,6 +22,7 @@ module.exports = {
         .addField("Description", command.description || "Not Provided :(")
         .addField("Aliases", "`" + command.aliases + "`" || "Not Provied")
         .addField("Usage", "`" + command.usage + "`" || "Not Provied")
+        .addField("Still lost?", `[Check the wiki](https://github.com/bintangyosua/Lumina/blob/main/FEATURES.md) or [get support here](https://discord.gg/uXFZScA)`)
         .setThumbnail(client.user.displayAvatarURL())
         .setColor("ED80A7")
         .setTimestamp()
