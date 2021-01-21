@@ -39,6 +39,56 @@
  - ✔: Finished
  - 💯: Prioritising before everything else
 
+### Action
+| Name      | Progress |
+|-----------|----------|
+| Cry       |    ✔     |
+| Hug       |    ✔     |
+| Kiss      |    ✔     |
+| Pat       |    ✔     |
+| Punch     |    ✔     |
+| Slap      |    ✔     |
+| Smug      |    ✔     |
+| Wink      |    ✔     |
+
+### AKB48
+| Name      | Progress |
+|-----------|----------|
+| Tomochin  |    ✔     |
+| Yukirin   |    ✔     |
+| Kitarie   |    ✔     |
+| Nyanchan  |    ✔     |
+| Acchan    |    ✔     |
+| Micchan   |    ✔     |
+| Sakura    |    ✔     |
+| Mion      |    ✔     |
+| Yuiri     |    ✔     |
+| Yuiyui    |    ✔     |
+| Nachan    |    ✔     |
+| Yuko      |    ✔     |
+| Sasshii   |    ✔     |
+| Paruru    |    ✔     |
+| Juri      |    ✔     |
+| Takamina  |    ✔     |
+| Mayuyu    |    ✔     |
+| Zukky     |    ✔     |
+| Yuihan    |    ✔     |
+
+
+### Anime Related
+| Name       | Progress |
+|------------|----------|
+| Anime      |    ✔     |
+| AnimeQuote |    ✔     |
+| Scrap      |    ✔     |
+
+### Economy
+| Name        | Progress |
+|-------------|----------|
+| Leaderboard |    ✔     |
+| Profile     |    ✔     |
+| Work        |    ✔     |
+
 ### Fun
 | Name      | Progress |
 |-----------|----------|
@@ -57,6 +107,26 @@
 | RollDice  |    ✔     |
 | RPS       |    ✔     |
 
+### Music
+| Name       | Progress |
+|------------|----------|
+| Loop       |    ✔     |
+| Lyrics     |    ✔     |
+| Move       |    ✔     |
+| NowPlaying |    ✔     |
+| Pause      |    ✔     |
+| Play       |    ✔     |
+| Playlist   |    ✔     |
+| Queue      |    ✔     |
+| Remove     |    ✔     |
+| Resume     |    ✔     |
+| Search     |    ❌    |
+| Shuffle    |    ✔     |
+| Skip       |    ✔     |
+| Skipto     |    ✔     |
+| Stop       |    ✔     |
+| Volume     |    ✔     |
+
 ### Utils
 | Name       | Progress |
 |------------|----------|
@@ -65,7 +135,7 @@
 | Twitch     |    ❌    |
 | Youtube    |    ❌    |
 | Weather    |    ✔     |
-| Wiki       |    ❌    |
-| WikiSearch |    ❌    |
+| Wiki       |    ✔     |
+| WikiSearch |    ✔     |
 
 ## 🤝 Contributing
