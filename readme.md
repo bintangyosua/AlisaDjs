@@ -3,7 +3,7 @@
 ![Lumina](https://github.com/bintangyosua/LuminaDjs/blob/main/src/libs/images/Support_Server.png?raw=true)
 <h1 align="center">
   <br>
-  <img src="../src/libs/images/Support_Server.png"></a>
+  <img src="./src/libs/images/Support_Server.png"></a>
   <br>
   Calypso Discord Bot
   <br>
