@@ -5,13 +5,10 @@
 # 🤖 Lumina (Discord Bot)
 > EvoBot is a Discord Music Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
 
-## 🚀 Getting Started
-
-![heroku](https://i.imgur.com/iaoUePg.png?1)
-
 ## 📝 Features & Commands
 
 > Note: The default prefix is '$'
+
 ### Moderation
 |Name    | Description                                                 |
 |--------|-------------------------------------------------------------|
@@ -22,18 +19,17 @@
 | Unmute | Unmute Require "Manage Roles" Discord Permission            |
 
 ### Help
-| Name          | Description                                |
-|---------------|--------------------------------------------|
-| Avatar        | Get the link for the users Avatar          |
-| Stats         | Get the current stats of the bot           |
-| Help          | Get the list of commands Lumina offers     |
-| Ping          | Displays the current API latency           |
-| InviteMe      | Generate link to invite Lumina             |
-| ServerInfo    | Get information about the server           |
-| Prefix        | Get Lumina prefix                          |
-| UserInfo      | Get information about the specific members |
-| SupportServer | Displays the invite link to Lumina's       |
-|               | Discord Support Server                     |
+| Name          | Description                                                       |
+|---------------|-------------------------------------------------------------------|
+| Avatar        | Get the link for the users Avatar                                 |
+| Stats         | Get the current stats of the bot                                  |
+| Help          | Get the list of commands Lumina offers                            |
+| Ping          | Displays the current API latency                                  |
+| InviteMe      | Generate link to invite Lumina                                    |
+| ServerInfo    | Get information about the server                                  |
+| Prefix        | Get Lumina prefix                                                 |
+| UserInfo      | Get information about the specific members                        |
+| SupportServer | Displays the invite link to Lumina's Discord Support Server       |
 
 ## 📝Ideas and Commands
 **Name:** The name of the command
@@ -47,20 +43,29 @@
 | Name      | Progress |
 |-----------|----------|
 | Eightball |    ❌    |
-| RPS       |    ❌    |
+| Aki       |    ✔     |
+| Car       |    ✔     |
+| Cat       |    ✔     |
+| CoinFlip  |    ✔     |
+| Eject     |    ✔     |
+| Emojify   |    ✔     |
+| Fact      |    ✔     |
+| Joke      |    ✔     |
+| Meme      |    ✔     |
+| Quote     |    ✔     |
+| Riddle    |    ✔     |
+| RollDice  |    ✔     |
+| RPS       |    ✔     |
 
-### Social media Statistics
-| Name      | Progress |
-|-----------|----------|
-| Insta     |    ❌    |
-| Twitter   |    ❌    |
-| Twitch    |    ❌    |
-| Youtube   |    ❌    |
-
-### Random commands
-|Name| Progress |
-|----|----------|
-||    ❌    |
-
+### Utils
+| Name       | Progress |
+|------------|----------|
+| Insta      |    ✔     |
+| Twitter    |    ✔     |
+| Twitch     |    ❌    |
+| Youtube    |    ❌    |
+| Weather    |    ✔     |
+| Wiki       |    ❌    |
+| WikiSearch |    ❌    |
 
 ## 🤝 Contributing
