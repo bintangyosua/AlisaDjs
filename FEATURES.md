@@ -2,20 +2,20 @@
 
 > Note: The default prefix is '$'
 
-### Action
+### 🏹 Action
 Require to mention member `cry hug kiss pat punch slap`
 * `$cry <username>`
 
 Not require to mention member `smug wink`
 * `$smug`
 
-### AKB48
+### 💃 AKB48
 Get an information about AKB48 Members 
 
 `tomochin yukirin kitarie nyanchan acchan miichan sakura sae mion yuiri yuiyui nachan yuko sasshii paruru juri takamina mayuyu zukky yuihan`
 * `$sasshi`
 
-### Anime Related
+### 🈶 Anime Related
 all things related to anime are here
 
 `anime animequote scrap`
@@ -23,10 +23,7 @@ all things related to anime are here
 * `$animequote`
 * `$scrap <Anime Title> - <Episode Number>`
 
-ex: $scrap Death Note - 7
-
-
-### Economy
+### 💰 Economy
 you want to have money? get to work. levels are also available here. You can also see the ranking with the leaderboard.
 
 `leaderboard profile work`
@@ -34,7 +31,7 @@ you want to have money? get to work. levels are also available here. You can als
 * `$profile / $profile <username>`
 * `$work`
 
-### Fun
+### 🎮 Fun
 Random Stuff `advice car cat coinflip fact joke meme quote riddle rolldice\`
 * `$coinflip`
 
@@ -43,19 +40,15 @@ Not Random Stuff `aki eject emojify rps`
 * `$eject <username> Among Us Eject`
 * `$emojify <words>`
 
-ex: $emojify hii
-
 * `$rps <rock/paper/scissors>`
 
-ex: $rps scissors
-
-### Info
+### 📃 Info
 All information can be found here, such as a list of commands, someone's avatar, stats from lumina, user information, server stats and more
 
 `avatar debug help inviteme ping prefix servercount servericon serverinfo stats supportserver uptime userinfo`
 * $help
 
-###  Moderation
+### 🔧 Moderation
 `ban kick mute prune unmute`
 * `ban <username>`
 * `kick <username>`
@@ -63,7 +56,7 @@ All information can be found here, such as a list of commands, someone's avatar,
 * `unmute <username>` 
 * `prune <total of messages number>`
 
-### Music
+### 🎶 Music
 you like music? You can listen to music with the command below
 
 `loop lyrics move nowplaying pause play playlist queue remove resume search shuffle skip skipto stop volume`
@@ -94,16 +87,11 @@ you like music? You can listen to music with the command below
 
 `$playlist linkin park meteora`
 
-### Utilities
+### 🕹 Utilities
 Other features like searching information from someone instagra, someone's twitter, weather at a specific location
 
 `insta suggest twitter weather wiki wikisearch`
 * `$insta <@insta_username>`
-ex: $insta instagram
 * `$suggest <messages>`
 * `$twitter <@twitter_username>` 
-
-ex: $twitter miyuki093_
 * `$weather <location>` 
-
-ex: $weather tokyo
