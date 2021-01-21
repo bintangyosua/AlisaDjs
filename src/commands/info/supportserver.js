@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: "supportserver",
-    description: "Displays the invite link to Calypso\'s Discord Support Server.",
+    description: "Displays the invite link to Lumina\'s Discord Support Server.",
     category: `📃   **Info :**`,
     aliases: ['support', 'ss'],
     usage: "supportserver",

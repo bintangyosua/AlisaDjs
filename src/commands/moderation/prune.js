@@ -4,6 +4,7 @@ module.exports = {
   category: `🔧   **Moderation** :`,
   usage: "prune <how many messages>",
   aliases: ['purge'],
+  permission: 'MANAGE_MESSAGE',
   run: async (client, message, args) => {
     
     if(!args[0])
