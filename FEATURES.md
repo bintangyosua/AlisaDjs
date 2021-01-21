@@ -6,7 +6,7 @@
 Require to mention member `cry hug kiss pat punch slap`
 * $smug
 Not require to mention member `smug wink`
-* $cry <username>`
+* $cry `<username>`
 
 ### AKB48
 Get an information about AKB48 Members below
@@ -22,19 +22,24 @@ ex: $scrap Death Note - 7
 
 ### Economy
 `leaderboard profile work`
-* $leaderboard
-* $profile / $profile <username>
-* $work
+* `$leaderboard`
+* `$profile / $profile <username>`
+* `$work`
 
 ### Fun
+
 Random Stuff `advice car cat coinflip fact joke meme quote riddle rolldice\`
-* $coinflip
+* `$coinflip`
+
 Not include `aki eject emojify rps`
-* $aki` Playing Aki
-* $eject <username>` Among Us Eject
-* $emojify <words>
-ex: $emojify hii`
-* $rps <rock/paper/scissors>
+* `$aki` Playing Aki`
+* `$eject <username> Among Us Eject`
+* `$emojify <words>`
+
+ex: $emojify hii
+
+* `$rps <rock/paper/scissors>`
+
 ex: $rps scissors
 
 ### Info
@@ -43,11 +48,11 @@ ex: $rps scissors
 
 ###  Moderation
 `ban kick mute prune unmute`
-* ban <username>
-* kick <username>
-* mute <username>
-* unmute <username> 
-* prune <total of messages number>
+* `ban <username>`
+* `kick <username>`
+* `mute <username>`
+* `unmute <username>` 
+* `prune <total of messages number>`
 
 ### Music 
 `loop lyrics move nowplaying pause play playlist queue remove resume search shuffle skip skipto stop volume`
@@ -80,10 +85,12 @@ ex: $rps scissors
 
 ### Utilities
 `insta suggest twitter weather wiki wikisearch`
-* $insta <@insta_username>
+* `$insta <@insta_username>`
 ex: $insta instagram
-* $suggest <messages>
-* $twitter <@twitter_username> 
+* `$suggest <messages>`
+* `$twitter <@twitter_username>` 
+
 ex: $twitter miyuki093_
-* $weather <location> 
+* `$weather <location>` 
+
 ex: $weather tokyo
