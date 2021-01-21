@@ -9,6 +9,7 @@ Not require to mention member `smug wink`
 * $cry <username>`
 
 ### AKB48
+Get an information about AKB48 Members below
 `tomochin yukirin kitarie nyanchan acchan miichan sakura sae mion yuiri yuiyui nachan yuko sasshii paruru juri takamina mayuyu zukky yuihan`
 * $sasshi
 
@@ -16,7 +17,8 @@ Not require to mention member `smug wink`
 `anime animequote scrap`
 * $anime Code Geass
 * $animequote
-* $scrap <Anime Title> - <Episode Number> ex: $scrap Death Note - 7  
+* $scrap <Anime Title> - <Episode Number>
+ex: $scrap Death Note - 7  
 
 ### Economy
 `leaderboard profile work`
@@ -30,8 +32,10 @@ Random Stuff `advice car cat coinflip fact joke meme quote riddle rolldice\`
 Not include `aki eject emojify rps`
 * $aki` Playing Aki
 * $eject <username>` Among Us Eject
-* $emojify <words> | $emojify hii`
-* $rps <rock/paper/scissors> | ex: $rps scissors
+* $emojify <words>
+ex: $emojify hii`
+* $rps <rock/paper/scissors>
+ex: $rps scissors
 
 ### Info
 `avatar debug help inviteme ping prefix servercount servericon serverinfo stats supportserver uptime userinfo`
@@ -46,6 +50,7 @@ Not include `aki eject emojify rps`
 * prune <total of messages number>
 
 ### Music 
+`loop lyrics move nowplaying pause play playlist queue remove resume search shuffle skip skipto stop volume`
 * 🎶 Play music from YouTube via url
 
 `$play https://www.youtube.com/watch?v=GLvohMXgcBo`
@@ -61,6 +66,7 @@ Not include `aki eject emojify rps`
 * 🔎 Search and select music to play
 
 `$search Pearl Jam`
+  
   Reply with song number or numbers seperated by comma that you wish to play
   Examples: 1 or 1,2,3
 
@@ -71,3 +77,13 @@ Not include `aki eject emojify rps`
 🔎 Play youtube playlists via search query
 
 `$playlist linkin park meteora`
+
+### Utilities
+`insta suggest twitter weather wiki wikisearch`
+* $insta <@insta_username>
+ex: $insta instagram
+* $suggest <messages>
+* $twitter <@twitter_username> 
+ex: $twitter miyuki093_
+* $weather <location> 
+ex: $weather tokyo
