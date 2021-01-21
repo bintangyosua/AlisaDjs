@@ -4,34 +4,41 @@
 
 ### Action
 Require to mention member `cry hug kiss pat punch slap`
-* $smug
+* `$cry <username>`
+
 Not require to mention member `smug wink`
-* $cry `<username>`
+* `$smug`
 
 ### AKB48
-Get an information about AKB48 Members below
+Get an information about AKB48 Members 
+
 `tomochin yukirin kitarie nyanchan acchan miichan sakura sae mion yuiri yuiyui nachan yuko sasshii paruru juri takamina mayuyu zukky yuihan`
-* $sasshi
+* `$sasshi`
 
 ### Anime Related
+all things related to anime are here
+
 `anime animequote scrap`
-* $anime Code Geass
-* $animequote
-* $scrap <Anime Title> - <Episode Number>
-ex: $scrap Death Note - 7  
+* `$anime Code Geass`
+* `$animequote`
+* `$scrap <Anime Title> - <Episode Number>`
+
+ex: $scrap Death Note - 7
+
 
 ### Economy
+you want to have money? get to work. levels are also available here. You can also see the ranking with the leaderboard.
+
 `leaderboard profile work`
 * `$leaderboard`
 * `$profile / $profile <username>`
 * `$work`
 
 ### Fun
-
 Random Stuff `advice car cat coinflip fact joke meme quote riddle rolldice\`
 * `$coinflip`
 
-Not include `aki eject emojify rps`
+Not Random Stuff `aki eject emojify rps`
 * `$aki` Playing Aki`
 * `$eject <username> Among Us Eject`
 * `$emojify <words>`
@@ -43,6 +50,8 @@ ex: $emojify hii
 ex: $rps scissors
 
 ### Info
+All information can be found here, such as a list of commands, someone's avatar, stats from lumina, user information, server stats and more
+
 `avatar debug help inviteme ping prefix servercount servericon serverinfo stats supportserver uptime userinfo`
 * $help
 
@@ -54,7 +63,9 @@ ex: $rps scissors
 * `unmute <username>` 
 * `prune <total of messages number>`
 
-### Music 
+### Music
+you like music? You can listen to music with the command below
+
 `loop lyrics move nowplaying pause play playlist queue remove resume search shuffle skip skipto stop volume`
 * 🎶 Play music from YouTube via url
 
@@ -84,6 +95,8 @@ ex: $rps scissors
 `$playlist linkin park meteora`
 
 ### Utilities
+Other features like searching information from someone instagra, someone's twitter, weather at a specific location
+
 `insta suggest twitter weather wiki wikisearch`
 * `$insta <@insta_username>`
 ex: $insta instagram
