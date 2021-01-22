@@ -1,6 +1,5 @@
 const Instagram = require('scraper-instagram');
 const { MessageEmbed } = require('discord.js');
-const InstagramApi = require('instagram-web-api');
 const paginationEmbed = require('discord.js-pagination');
 const { verified_instagram } = require('../../utils/emojis.json');
 const { post } = require('request-promise-native');
