@@ -23,6 +23,7 @@ module.exports = {
           .addField('User', message.member, true)
           .addField('Server', message.guild.name, true)
           .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
+          
           .setTimestamp()
           .setColor(message.guild.me.displayHexColor);
         feedbackChannel.send(feedbackEmbed);
