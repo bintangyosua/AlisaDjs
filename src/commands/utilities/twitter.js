@@ -1,6 +1,8 @@
 const tokensss = require('../../utils/twitter.json');
 const getTwitterInfo = require('get-twitter-info');
+const paginationEmbed = require('discord.js-pagination');
 const { MessageEmbed } = require('discord.js');
+const { verified_instagram } = require('../../utils/emojis.json')
 // 3689696860%3A0RjraI9zlSn0ao%3A7
 module.exports = {
     name: 'twitter',
@@ -25,10 +27,15 @@ module.exports = {
           };
 
         const profile = await getTwitterInfo(tokens, Replaced)
+
+        console.log(profile)
         
           const embed = new MessageEmbed()
-            .setAuthor(`${profile.verified ? `${profile.screen_name} ✔` : `${profile.screen_name}`} ${profile.protected ? '🔒' : ''}`, `${profile.profile_image_url}`)
-            .setDescription(`\*\*${profile.name}\*\* \n${profile.description} \n${profile.url}`)
+            .setTitle('\*\*Twitter\*\*')
+            .addField(`\*\*${profile.name} (@${profile.screen_name}) ${profile.verified ? `${verified_instagram}` : ``} ${profile.protected ? '🔒' : ''}\*\*`,
+`${profile.description}
+${profile.url}`
+            )
             .setColor("1b95e0")
             .addFields(
                 {
@@ -48,7 +55,7 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: "Tweets",
+                    name: "Last Tweet",
                     value: profile.statuses_count,
                     inline: true
                 },
@@ -61,7 +68,43 @@ module.exports = {
             .setImage(profile.profile_banner_url)
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-          message.channel.send(embed)
+
+        const status = new MessageEmbed()
+                .setTitle('\*\*Twitter\*\*')
+                .addField(`\*\*${profile.name} (@${profile.screen_name}) ${profile.verified ? `${verified_instagram}` : ``} ${profile.protected ? '🔒' : ''}\*\*`,
+`${profile.description}
+${profile.url}`
+                            )
+                .setColor("1b95e0")
+                .addFields(
+                    {
+                        name: 'Created at',
+                        value: profile.status.created_at,
+                        inline: true
+                    },
+                    {
+                        name: 'Tweet',
+                        value: profile.status.text,
+                        inline: false
+                    }
+                )
+                .setTimestamp()
+                .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
+
+
+                pages = [
+                    embed,
+                    status,
+                  ];
+      
+                  const emojiList = ["⏪", "⏩"];
+                  const timeout = '300000'
+      
+                
+      
+                  paginationEmbed(message, pages, emojiList, timeout);
+
+
         
         console.log(profile);
     }
