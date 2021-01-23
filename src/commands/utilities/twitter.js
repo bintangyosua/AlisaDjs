@@ -11,11 +11,8 @@ module.exports = {
     usage: "twitter <username> ",
     aliases: ["twt"],
     run: async(client, message, args) => {
-
         let Text = args.join(" ");
-
         if (!Text) return message.channel.send(`Please Give Something!`);
-
         let Replaced = Text.replace(/ +/g, " ");
 
         const tokens = {
@@ -26,11 +23,18 @@ module.exports = {
             access_token_secret: tokensss.access_token_secret
           };
 
-        const profile = await getTwitterInfo(tokens, Replaced)
-
-        console.log(profile)
         
-          const embed = new MessageEmbed()
+        
+        
+        try {
+
+            const profile = await getTwitterInfo(tokens, Replaced)
+            console.log(profile)
+
+            if (!profile.url || profile.url === null) profile.url = "-";
+            
+
+            const embed = new MessageEmbed()
             .setTitle('\*\*Twitter\*\*')
             .addField(`\*\*${profile.name} (@${profile.screen_name}) ${profile.verified ? `${verified_instagram}` : ``} ${profile.protected ? '🔒' : ''}\*\*`,
 `${profile.description}
@@ -68,8 +72,11 @@ ${profile.url}`
             .setImage(profile.profile_banner_url)
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
+          
+        
 
-        const status = new MessageEmbed()
+                  try {
+                    const status = new MessageEmbed()
                 .setTitle('\*\*Twitter\*\*')
                 .addField(`\*\*${profile.name} (@${profile.screen_name}) ${profile.verified ? `${verified_instagram}` : ``} ${profile.protected ? '🔒' : ''}\*\*`,
 `${profile.description}
@@ -100,12 +107,62 @@ ${profile.url}`
                   const emojiList = ["⏪", "⏩"];
                   const timeout = '300000'
       
-                
+                  paginationEmbed(message, pages, emojiList, timeout);
+                  } catch (error) {
+                    console.log(error)
+                    const embed = new MessageEmbed()
+            .setTitle('\*\*Twitter\*\*')
+            .addField(`\*\*${profile.name} (@${profile.screen_name}) ${profile.verified ? `${verified_instagram}` : ``} ${profile.protected ? '🔒' : ''}\*\*`,
+`${profile.description}
+${profile.url}`
+            )
+            .setColor("1b95e0")
+            .addFields(
+                {
+                    name: "Followers",
+                    value: profile.followers_count,
+                    inline: true
+                },
+                {
+                    name: "Followings",
+                    value: profile.friends_count,
+                    inline: true
+            
+                },
+                {
+                    name: "Favourites",
+                    value: profile.favourites_count,
+                    inline: true
+                },
+                {
+                    name: "Last Tweet",
+                    value: profile.statuses_count,
+                    inline: true
+                },
+                {
+                    name: "Created at",
+                    value: profile.created_at,
+                    inline: true
+                }, 
+            )
+            .setImage(profile.profile_banner_url)
+            .setTimestamp()
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
+                    
+                pages = [
+                    embed,
+                  ];
+      
+                  const emojiList = ["⏪", "⏩"];
+                  const timeout = '300000'
       
                   paginationEmbed(message, pages, emojiList, timeout);
 
+                  }
 
-        
-        console.log(profile);
+                } catch (error) {  
+                    message.channel.send('couldn\'t find that account')
+                    console.log(error)
+                }
     }
 }
