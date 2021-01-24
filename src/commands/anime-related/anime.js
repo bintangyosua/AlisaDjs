@@ -28,9 +28,6 @@ module.exports = {
       let Replaced = Text.replace(/ +/g, " ");
 
 
-      await Msg.delete();
-
-
       let Anime;
 
 
@@ -79,15 +76,20 @@ module.exports = {
       .setFooter(`Score - ${Anime.score}`)
       .setTimestamp();
 
+      
+      console.log(Anime)
+      return message.channel.send(Embed);
 
+      Msg.delete()
+      
       } catch (error) {
         return message.channel.send(`No Anime Found!`);
       };
 
-      console.log(Anime)
 
 
-      return message.channel.send(Embed);
+
+      
 
 
       //End

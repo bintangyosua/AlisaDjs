@@ -13,17 +13,17 @@ module.exports = {
     
     
     if(!cmd[0]) {
-      return message.channel.send("Please Give anime name")
+      return message.channel.send("Usage: $scrap <Anime title> - <Episode number> \nExample: $scrap code geass - 30")
     }
     
     if(!cmd[1]) {
-      return message.channel.send("Please Give anime episode number")
+      return message.channel.send("Usage: $scrap <Anime title> - <Episode number> \nExample: $scrap code geass - 30")
     }
     
-        let msg = await message.channel.send("Hacking website -_-")
+    let msg = await message.channel.send("Hacking website -_-")
     
-   Anime.fromName(cmd[0]).then(function (anime) {
-  anime.episodes[cmd[1]-1].fetch().then(function (episode) {
+    Anime.fromName(cmd[0]).then(function (anime) {
+    anime.episodes[cmd[1]-1].fetch().then(function (episode) {
     
     let embed = new discord.MessageEmbed()
     .setTitle(`SCRAP - ${cmd}`)
@@ -39,7 +39,7 @@ module.exports = {
     
     message.channel.send(embed)
   
-  msg.delete()
+    msg.delete()
     
     
     
