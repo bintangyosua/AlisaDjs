@@ -42,6 +42,8 @@ module.exports = {
       hdVideo: false,
       verifyFp: ''
   };
+      const emojiList = ["⏪", "⏩"];
+      const timeout = '300000'
       const user = await TikTokScraper.getUserProfileInfo(Replaced, options);
 
       const posts = await TikTokScraper.user(Replaced, {session})
@@ -80,7 +82,7 @@ ${profile.signature}
           )
           .setTimestamp()
           .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+        try {
         const embed0 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data0.text}`)
@@ -96,7 +98,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed1 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data1.text}`)
@@ -112,7 +114,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed2 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data2.text}`)
@@ -128,7 +130,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed3 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data3.text}`)
@@ -144,7 +146,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed4 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data4.text}`)
@@ -160,7 +162,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed5 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data5.text}`)
@@ -176,7 +178,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed6 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data6.text}`)
@@ -192,7 +194,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed7 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data7.text}`)
@@ -208,7 +210,7 @@ ${profile.signature}
             )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
-
+              try {
             const embed8 = new MessageEmbed()
             .setTitle('Tiktok')
             .addField(`${profile.nickname} (@${Replaced}) ${profile.verified ? ` ${emojis.verified_instagram}` : ''} ${profile.privateAccount ? '🔒' : ''}`, `\n${data8.text}`)
@@ -238,15 +240,116 @@ ${profile.signature}
               embed8,
             ];
 
-            const emojiList = ["⏪", "⏩"];
-            const timeout = '300000'
+            paginationEmbed(message, pages, emojiList, timeout);
 
-          
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+              embed3,
+              embed4,
+              embed5,
+              embed6,
+              embed7,
+            ];
 
             paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+              embed3,
+              embed4,
+              embed5,
+              embed6,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+              embed3,
+              embed4,
+              embed5,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+              embed3,
+              embed4,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+              embed3,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+              embed2,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+              embed1,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
+
+          } catch (error) {
+            pages = [
+              embed,
+              embed0,
+            ];
+
+            paginationEmbed(message, pages, emojiList, timeout);
+          }
             
+          } catch (error) {
+            message.channel.send(embed)
+          }
+    
+    
     } catch (error) {
         console.log(error);
+        message.channel.send('Couldn\'t find into that user')
     }
     
   }
