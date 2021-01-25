@@ -12,33 +12,23 @@ module.exports = {
   run: async (client, message, args) => {
       //Start
 
-
       let Text = args.join(" ");
-
 
       if (!Text) return message.channel.send(`Please Give Something!`);
 
-
       if (Text.length > 200) return message.channel.send(`Text Limit - 200`);
-
 
       let Msg = await message.channel.send(`**Searching It For You 🔮**`);
 
-
       let Replaced = Text.replace(/ +/g, " ");
-
 
       let Anime;
 
-
       let Embed;
-
 
       try {
 
-
       Anime = await Scraper.getInfoFromName(Replaced);
-
 
       if (!Anime.genres[0] || Anime.genres[0] === null) Anime.genres[0] = "None";
       if (!Anime.studios[0] || Anime.studios[0] === null) Anime.studios[0] = "None";

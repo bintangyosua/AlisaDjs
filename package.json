@@ -13,7 +13,6 @@
     "array-move": "^3.0.1",
     "ascii-table": "0.0.9",
     "axios": "^0.21.1",
-    "canvacord": "^5.0.8",
     "common-tags": "^1.8.0",
     "discord-mongo-currency": "^1.0.4",
     "discord-mongodb-prefix": "^1.0.6",
