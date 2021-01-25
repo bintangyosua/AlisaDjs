@@ -16,7 +16,7 @@ module.exports = {
         const leaderboard = await Levels.computeLeaderboard(client, rawLeaderboard, true); // We process the leaderboard.
         
         const lb = leaderboard.map(e => `${e.position}. ${e.username}#${e.discriminator}\nLevel: ${e.level}\nXP: ${e.xp.toLocaleString()}`); // We map the outputs.
-        
+        console.log(lb)
         const embed = new MessageEmbed()
             .setAuthor('Lumina\'s Leaderboard', client.user.displayAvatarURL())
             .setThumbnail(client.user.displayAvatarURL())

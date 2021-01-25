@@ -19,6 +19,8 @@ module.exports = {
  
         const userCurrency = await mongoCurrency.findUser(member.id, message.guild.id);
 
+        console.log(user)
+
         
 
         const embed = new MessageEmbed()
