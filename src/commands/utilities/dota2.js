@@ -9,19 +9,36 @@ module.exports = {
     aliases: ['dota'],
     category: '🕹   **Misc :**',
     run: async (client, message, args) => {
-        
 
-        const list = new MessageEmbed()
+        const heroName = await fetch("https://api.opendota.com/api/heroStats").then((res) =>
+            res.json()
+            );
+
+        const str = heroName.filter(record => record.primary_attr === 'str')
+        const strList = str.map(obj => obj.localized_name)
+        
+        const agi = heroName.filter(record => record.primary_attr === 'agi')
+        const agiList = agi.map(obj => obj.localized_name)
+
+        const int = heroName.filter(record => record.primary_attr === 'int')
+        const intList = int.map(obj => obj.localized_name)
+
+        console.log(strList)
+
+        const heroList = new MessageEmbed()
             .setTitle('Dota 2')
-            .setColor('141518')
-            .addField('Usage', '$dota2 <hero name> \nExample: $dota2 Anti-Mage')
-            .addField('List', `Abaddon, Alchemist, Ancient Apparition, Anti-Mage, Arc Warden, Axe, Bane, Batrider, Beastmaster, Bloodseeker, Bounty Hunter, Brewmaster, Bristleback, Broodmother, Centaur Warrunner, Chaos Knight, Chen, Clinkz, Clockwerk, Crystal Maiden, Dark Seer, Dark Willow, Dazzle, Death Prophet, Disruptor, Doom, Dragon Knight, Drow Ranger, Earth Spirit, Earthshaker, Elder Titan, Ember Spirit, Enchantress, Enigma, Faceless Void, Grimstroke, Gyrocopter, Hoodwink, Huskar, Invoker, Io, Jakiro, Juggernaut, Keeper of the Light, Kunkka, Legion Commander, Leshrac, Lich, Lifestealer, Lina, Lion, Lone Druid, Luna, Lycan`)
-            .addField('List2', `Magnus, Mars, Medusa, Meepo, Mirana, Monkey King, Morphling, Naga Siren, Nature's Prophet, Necrophos, Night Stalker, Nyx Assassin, Ogre Magi, Omniknight, Oracle, Outworld Destroyer, Pangolier, Phantom Assassin, Phantom Lancer, Phoenix, Puck, Pudge, Pugna, Queen of Pain, Razor, Riki, Rubick, Sand King, Shadow Demon, Shadow Fiend, Shadow Shaman, Silencer, Skywrath Mage, Slardar, Slark, Snapfire, Sniper, Spectre, Spirit Breaker, Storm Spirit, Sven, Techies, Templar Assassin, Terrorblade, Tidehunter, Timbersaw, Tinker, Tiny, Treant Protector, Troll Warlord, Tusk, Underlord, Undying, Ursa, Vengeful Spirit, Venomancer, Viper, Visage, Void Spirit, Warlock, Weaver, Windranger, Winter Wyvern, Witch Doctor, Wraith King`)
+            .setThumbnail('https://i.pinimg.com/originals/c1/ec/da/c1ecda477bc92b6ecfc533b64d4a0337.png')
+            .setDescription('Usage: \`$dota2 <Hero Name>\` \nExample: \`$dota2 Anti-Mage\`')
+            .addFields(
+                { name: 'Strength', value: strList.join(", ") },
+                { name: 'Agility', value: agiList.join(", ") },
+                { name: 'Intelligence', value: intList.join(", ")}
+            )
             .setTimestamp()
             .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
 
         let Text = args.join(" ");
-        if (!Text) return message.channel.send(list);
+        if (!Text) return message.channel.send(heroList);
         let Replaced = Text.replace(/ +/g, " ");
 
         
@@ -34,7 +51,6 @@ module.exports = {
 
             const response = data.filter(record => record.localized_name === Replaced)
             const hero = response[0]
-            console.log(hero)
             
             const img_url = `https://api.opendota.com${hero.img}`
 
@@ -77,7 +93,7 @@ module.exports = {
 
         } catch (error) {
             console.log(error)
-            message.channel.send('Please give the correct name!', list)
+            message.channel.send('Please give the correct name!', heroList)
         }
         
     }
