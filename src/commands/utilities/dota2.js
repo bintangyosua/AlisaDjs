@@ -63,14 +63,14 @@ module.exports = {
             const embed = new MessageEmbed()
                 .setTitle('Dota 2')
                 .setColor('141518')
-                .setThumbnail(img_url)
                 .addFields(
-                    { name: 'Name', value: `\`${hero.localized_name}\``, inline: true },
-                    { name: 'Primary Attribute', value: `\`${hero.primary_attr}\``, inline: true },
-                    { name: 'Attack Type', value: `\`${hero.attack_type}\``, inline: true },
-                    { name: 'Roles', value: `\`${hero.roles.join(", ")}\``, inline: true },
+                    { name: 'Name', value: `${hero.localized_name}`, inline: true },
+                    { name: 'Primary Attribute', value: `${hero.primary_attr}`, inline: true },
+                    { name: 'Attack Type', value: `${hero.attack_type}`, inline: true },
+                    { name: 'Roles', value: `${hero.roles.join(", ")}`, inline: true },
                     { name: 'Stats', value: `\`\`\`asciidoc\n${Stats}\`\`\``, inline: false}
                     )
+                .setImage(img_url)
                 .setTimestamp()
                 .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
             message.channel.send(embed)
