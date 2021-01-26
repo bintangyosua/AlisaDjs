@@ -26,6 +26,8 @@ module.exports = {
 
       let Embed;
 
+      Msg.delete()
+
       try {
 
       Anime = await Scraper.getInfoFromName(Replaced);
@@ -70,7 +72,7 @@ module.exports = {
       console.log(Anime)
       return message.channel.send(Embed);
 
-      Msg.delete()
+      
       
       } catch (error) {
         return message.channel.send(`No Anime Found!`);
