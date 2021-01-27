@@ -43,7 +43,7 @@ module.exports = {
                                     { name: 'Type', value: response.types[0].type.name, inline: true },
                                     { name: 'Abilities', value: `${response.abilities[0].ability.name}, ${response.abilities[1].ability.name}`, inline: true},
                                     { name: 'Base', value: `
-Exp: ${response.abilities.base_experience} 
+Exp: ${response.base_experience} 
 HP: ${response.stats[0].base_stat}
 Attack: ${response.stats[1].base_stat}
 Defense:${response.stats[2].base_stat}
