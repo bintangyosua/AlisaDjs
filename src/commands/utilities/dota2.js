@@ -27,6 +27,7 @@ module.exports = {
 
         const heroList = new MessageEmbed()
             .setTitle('Dota 2')
+            .setColor('141518')
             .setThumbnail('https://i.pinimg.com/originals/c1/ec/da/c1ecda477bc92b6ecfc533b64d4a0337.png')
             .setDescription('Usage: \`$dota2 <Hero Name>\` \nExample: \`$dota2 Anti-Mage\`')
             .addFields(
