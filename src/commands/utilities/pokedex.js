@@ -9,16 +9,31 @@ module.exports = {
     category: '🕹   **Misc :**',
     run: async (client, message, args) => {
 
+        const zero = new MessageEmbed()
+            .setTitle('Pokedex')
+            .setThumbnail('https://cdn.pixabay.com/photo/2019/11/27/14/06/pokemon-4657023_1280.png')
+            .setColor("ED80A7")
+            .setDescription('Use this command to return data about specific types of pokedexes.')
+            .addField('Aliases', 'pokemon, poke \nUsage: \`$pokedex <pokemon name>\` \nExample: \`$pokedex pikachu\`')
+            .setTimestamp()
+            .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
+        
+
+        let Text = args.join(" ");
+        if (!Text) return message.channel.send(zero);
+        
+        let Replaced = Text.replace(/ +/g, " ");
+
         var P = new Pokedex();
 
         try {
         
-        const target = P.getPokemonByName("pikachu")
+        const target = P.getPokemonByName(Replaced)
                         .then(function(response) {
                             console.log(response);
 
                             const embed = new MessageEmbed()
-                                .setTitle('Pokemon')
+                                .setTitle('Pokedex')
                                 .setDescription(response.name)
                                 .setColor("ED80A7")
                                 .setThumbnail(response.sprites.front_default)
