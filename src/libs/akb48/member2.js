@@ -1,10 +1,12 @@
-var AKB48 = {
-
-    /* あ */
-    // Famous Member //
-    Sashihara_Rino
-    : {
-        surname       : {
+let AKBG = [
+    {
+        id              : ['sasshii', 'sashi', 'sasshii', 'sashii', 'rino', 'sashihara'],
+        name            : {
+            kanji       : '指原莉乃',
+            hiragana    : 'さしはら りの',
+            romaji      : 'Sashihara Rino'
+        },
+        surname         : {
             kanji       : '指原',
             hiragana    : 'さしはら'
         },
@@ -35,9 +37,8 @@ var AKB48 = {
             image         : 'http://stage48.net/wiki/images/thumb/2/2d/SashiharaRinoH2018.jpg/280px-SashiharaRinoH2018.jpg',
             image2        : 'http://stage48.net/wiki/images/b/be/SashiharaRinoChristmas2018.jpg'
     },
-    // 1st Generation //
-    Itano_Tomomi
-    : {
+    {
+        id              : ['tomochin', 'tomomi', 'itanotomomi', 'tomomiitano'],
         name            : {
             kanji       : '板野友美',
             hiragana    : 'いたの ともみ',
@@ -59,10 +60,10 @@ var AKB48 = {
             tiktok        : '-',
             showroom      : '-',
             image         : 'http://stage48.net/wiki/images/thumb/4/4f/ItanoTomomi2018.jpg/280px-ItanoTomomi2018.jpg',
-            images2       : 'd'
+            image2        : 'd'
     },
-    Kojima_Haruna
-    : {
+    {
+        id              : ['nyanchan', 'harunyan', 'kojimaharuna', 'harunakojima'],
         name            : {
             kanji       : '小嶋陽菜',
             hiragana    : '	こじま　はるな',
@@ -83,10 +84,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : 'https://www.tiktok.com/@harunakojima22',
             showroom      : '-',
-            images         : 'http://stage48.net/wiki/images/7/75/KojimaHaruna2018.jpg'
+            image         : 'http://stage48.net/wiki/images/7/75/KojimaHaruna2018.jpg'
     },
-    Takahashi_Minami
-    : {
+    {
+        id              : ['takamina', 'takahashiminami', 'minamitakahashi'],
         name            : {
             kanji       : '高橋みなみ',
             hiragana    : 'たかはし　みなみ',
@@ -107,10 +108,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/4/41/TakahashiMinami2018.jpg'
+            image         : 'http://stage48.net/wiki/images/4/41/TakahashiMinami2018.jpg'
     },
-    Maeda_Atsuko
-    : {
+    {
+        id              : ['acchan', 'achan', 'maedaatsuko', 'atsukomaeda'],
         name            : {
             kanji       : '前田敦子',
             hiragana    : 'まえだ あつこ',
@@ -132,10 +133,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/c/c3/MaedaAtsukoOP2018.jpg/280px-MaedaAtsukoOP2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/c/c3/MaedaAtsukoOP2018.jpg/280px-MaedaAtsukoOP2018.jpg'
     },
-    Minegishi_Minami
-    : {
+    {
+        id              : ['miichan', 'michan', 'micchan', 'minegishiminami', 'minamiminegishi'],
         name            : {
             kanji       : '峯岸みなみ',
             hiragana    : 'みねぎし みなみ',
@@ -156,11 +157,10 @@ var AKB48 = {
             weibo         : 'https://www.weibo.com/u/6349207467?is_hot=1',
             tiktok        : 'https://www.tiktok.com/share/user/6583689225362522113',
             showroom      : 'https://www.showroom-live.com/48_Minami_Minegishi',
-            images        : 'http://stage48.net/wiki/images/e/e3/MinegishiMinamiK2019.jpg'
+            image         : 'http://stage48.net/wiki/images/e/e3/MinegishiMinamiK2019.jpg'
     },
-    // 2nd Generation //
-    Oshima_Yuko
-    : {
+    {
+        id              : ['yuuko', 'yuko', 'oshimayuko', 'oshimayuuko', 'yuukooshima', 'yukooshima'],
         name            : {
             kanji       : '大島優子',
             hiragana    : 'おおしま ゆうこ',
@@ -181,10 +181,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/b/b3/OshimaYuko2018.jpg/280px-OshimaYuko2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/b/b3/OshimaYuko2018.jpg/280px-OshimaYuko2018.jpg'
     },
-    Miyazawa_Sae
-    : {
+    {
+        id              : ['sae', 'miyazawasae', 'saemiyazawa'],
         name            : {
             kanji       : '宮澤佐江',
             hiragana    : 'みやざわ さえ',
@@ -205,11 +205,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/1/1e/MiyazawaSaeFlaveEntertainment.jpg'
+            image         : 'http://stage48.net/wiki/images/1/1e/MiyazawaSaeFlaveEntertainment.jpg'
     },
-    // 3rd Generation //
-    Kashiwagi_Yuki
-    : {
+    {
+        id              : ['yukirin', 'kashiwagiyuki', 'yukikashiwagi'],
         name            : {
             kanji       : '柏木由紀',
             hiragana    : 'かしわぎ　ゆき',
@@ -230,10 +229,10 @@ var AKB48 = {
             weibo         : 'https://weibo.com/u/6248701438',
             tiktok        : '-',
             showroom      : 'https://www.showroom-live.com/48_Yuki_Kashiwagi',
-            images        : 'http://stage48.net/wiki/images/a/a4/KashiwagiYukiB2019.jpg'
+            image         : 'http://stage48.net/wiki/images/a/a4/KashiwagiYukiB2019.jpg'
     },
-    Nakagawa_Haruka
-    : {
+    {
+        id              : ['harugon', 'haruka', 'nakagawaharuka', 'harukanakagawa'],
         name            : {
             kanji       : '仲川遥香',
             hiragana    : 'なかがわ　はるか',
@@ -254,10 +253,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom        : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/4/4f/HarukaAfterGraduation2017.jpg/140px-HarukaAfterGraduation2017.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/4/4f/HarukaAfterGraduation2017.jpg/140px-HarukaAfterGraduation2017.jpg'
     },
-    Watanabe_Mayu
-    : {
+    {
+        id              : ['mayuyu', 'watanabemayu', 'mayuwatanabe'],
         name            : {
             kanji       : '渡辺麻友',
             hiragana    : 'わたなべ　まゆ',
@@ -278,11 +277,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/1/16/WatanabeMayu2018.png/280px-WatanabeMayu2018.png'
+            image         : 'http://stage48.net/wiki/images/thumb/1/16/WatanabeMayu2018.png/280px-WatanabeMayu2018.png'
     },
-    // 9th Generation //
-    Kitahara_Rie
-    : {
+    {
+        id              : ['kitarie', 'kitahararie', 'riekitahara'],
         name            : {
             kanji       : '北原里英',
             hiragana    : 'きたはら りえ',
@@ -303,10 +301,10 @@ var AKB48 = {
             weibo         : 'http://www.weibo.com/u/6352282338?is_hot=1',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/d/de/KitaharaRieNIII2018.jpg/280px-KitaharaRieNIII2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/d/de/KitaharaRieNIII2018.jpg/280px-KitaharaRieNIII2018.jpg'
     },
-    Yokoyama_Yui
-    : {
+    {
+        id              : ['yuihan','yokoyamayui', 'yuiyokoyama'],
         name            : {
             kanji       : '横山由依',
             hiragana    : 'よこやま ゆい',
@@ -327,10 +325,10 @@ var AKB48 = {
             weibo         : 'https://www.weibo.com/u/5536924142?is_hot=1',
             tiktok        : 'https://www.tiktok.com/share/user/78951104716',
             showroom      : 'https://www.showroom-live.com/48_Yui_Yokoyama_A',
-            images        : 'http://stage48.net/wiki/images/thumb/3/38/YokoyamaYuiA2019.jpg/280px-YokoyamaYuiA2019.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/38/YokoyamaYuiA2019.jpg/280px-YokoyamaYuiA2019.jpg'
     },
-    Shimazaki_Haruka
-    : {
+    {
+        id              : ['paruru', 'shimazakiharuka', 'harukashimazaki'],
         name            : {
             kanji       : '島崎遥香',
             hiragana    : '-',
@@ -351,11 +349,10 @@ var AKB48 = {
             weibo         : 'https://weibo.com/u/7448414747',
             tiktok        : 'https://www.tiktok.com/@paruru866',
             showroom      : 'https://www.showroom-live.com/paruru_free',
-            images        : 'http://stage48.net/wiki/images/thumb/3/37/ShimazakiHaruka2016.jpg/280px-ShimazakiHaruka2016.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/37/ShimazakiHaruka2016.jpg/280px-ShimazakiHaruka2016.jpg'
     },
-    // 12th Generation //
-    Takahashi_Juri
-    : {
+    {
+        id              : ['juri', 'takahashijuri', 'juritakahashi'],
         name            : {
             kanji       : '	高橋朱里',
             hiragana    : 'たかはし じゅり',
@@ -376,11 +373,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : '-',
-            images        : 'http://stage48.net/wiki/images/thumb/3/3a/TakahashiJuri2018.jpg/280px-TakahashiJuri2018.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/3a/TakahashiJuri2018.jpg/280px-TakahashiJuri2018.jpg'
     },
-    // 13th Generation //
-    Murayama_Yuiri
-    : {
+    {
+        id              : ['yuiri', 'murayamayuiri', 'yuirimurayama'],
         name            : {
             kanji       : '村山彩希',
             hiragana    : 'むらやま ゆいり',
@@ -401,11 +397,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : 'https://www.showroom-live.com/48_Yuiri_Murayama',
-            images        : 'http://stage48.net/wiki/images/thumb/3/3c/MurayamaYuiri42019.jpg/280px-MurayamaYuiri42019.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/3c/MurayamaYuiri42019.jpg/280px-MurayamaYuiri42019.jpg'
     },
-    // 14th Generation //
-    Okada_Nana
-    : {
+    {
+        id              : ['nachan', 'nacchan', 'okadanana', 'nanaokada'],
         name            : {
             kanji       : '岡田奈々',
             hiragana    : 'おかだ なな',
@@ -426,11 +421,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : 'https://www.tiktok.com/share/user/6542342467467182081',
             showroom      : 'https://www.showroom-live.com/48_Nana_Okada',
-            images        : 'http://stage48.net/wiki/images/thumb/9/9b/OkadaNana42019.jpg/280px-OkadaNana42019.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/9/9b/OkadaNana42019.jpg/280px-OkadaNana42019.jpg'
     },
-    // 15th Generation //
-    Mukaichi_Mion
-    : {
+    {
+        id              : ['mion', 'mukaichimion', 'mionmukaichi'],
         name            : {
             kanji       : '向井地美音',
             hiragana    : 'むかいち みおん',
@@ -451,11 +445,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : 'https://www.showroom-live.com/48_Mion_Mukaichi',
-            images        : 'http://stage48.net/wiki/images/thumb/3/3f/MukaichiMionA2019.jpg/280px-MukaichiMionA2019.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/3f/MukaichiMionA2019.jpg/280px-MukaichiMionA2019.jpg'
     },
-    // 16th Generation //
-    Yamauchi_Mizuki
-    : {
+    {
+        id              : ['zukky', 'zukki', 'yamauchimizuki', 'mizukiyamauchi'],
         name            : {
             kanji       : '山内瑞葵',
             hiragana    : 'やまうち みずき',
@@ -476,11 +469,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : '-',
             showroom      : 'https://www.showroom-live.com/48_Mizuki_Yamauchi',
-            images        : 'http://stage48.net/wiki/images/thumb/3/31/YamauchiMizuki42019.jpg/280px-YamauchiMizuki42019.jpg'
+            image         : 'http://stage48.net/wiki/images/thumb/3/31/YamauchiMizuki42019.jpg/280px-YamauchiMizuki42019.jpg'
     },
-    // Kennin 7th Generation //
-    Oguri_Yui
-    : {
+    {
+        id              : ['yuiyui', 'oguriyui', 'yuioguri'],
         name            : {
             kanji       : '小栗有以',
             hiragana    : 'おぐり ゆい',
@@ -501,10 +493,10 @@ var AKB48 = {
             weibo         : '-',
             tiktok        : 'https://www.tiktok.com/share/user/6599613065690415105',
             showroom      : 'https://www.showroom-live.com/48_YUI_OGURI',
-            images        : 'http://stage48.net/wiki/images/thumb/7/71/OguriYui8June2019.png/280px-OguriYui8June2019.png'
+            image         : 'http://stage48.net/wiki/images/thumb/7/71/OguriYui8June2019.png/280px-OguriYui8June2019.png'
     },
-    Miyawaki_Sakura
-    : {
+    {
+        id              : ['sakura', 'kkura', 'miyawakisakura', 'sakuramiyawaki'],
         name            : {
             kanji       : '宮脇咲良',
             hiragana    : 'みやわき　さくら',
@@ -525,186 +517,9 @@ var AKB48 = {
             weibo         : 'http://www.weibo.com/u/6352047195?is_hot=1',
             tiktok        : 'https://www.tiktok.com/share/user/6542341154200567810',
             showroom      : 'http://www.showroom-live.com/48_SAKURA_MIYAWAKI',
-            images        : 'http://stage48.net/wiki/images/thumb/b/bd/MiyawakiSakuraBuenosAires2019.jpeg/280px-MiyawakiSakuraBuenosAires2019.jpeg'
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-    Gracia
-    : {
-        name            : {
-            kanji       : '',
-            hiragana    : '',
-            romaji      : ''
-        },
-            nickname      : '',
-            date_of_birth : '',
-            blood_type    : '',
-            from          : '',
-            office        : '',
-            current_teams : [ '' ],
-            catch_phrase  : ``,
-            center_singles: '',
-
-            instagram     : '',
-            twitter       : '',
-            youtube       : '',
-            weibio        : '',
-            images        : ''
-    },
-}
-
-if (typeof module !== 'undefined') {
-    module.exports = AKB48;
+            image         : 'http://stage48.net/wiki/images/thumb/b/bd/MiyawakiSakuraBuenosAires2019.jpeg/280px-MiyawakiSakuraBuenosAires2019.jpeg'
     }
+]
+
+
+exports.AKBG = AKBG;

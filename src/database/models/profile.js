@@ -1,10 +1,21 @@
 const mongoose = require('mongoose');
 
+const reqString = {
+    type: String,
+    required: true
+}
+
 const ProfileSchema = new mongoose.Schema({
-    userId: String,
-    username: String,
-    bio: String,
-    rep: Number,
+    userId: reqString,
+    username: reqString,
+    bio: {
+        type: String,
+        required: false
+    },
+    rep: {
+        type: Number,
+        required: false
+    },
     xp: {
         type: Number,
         default: 0,
