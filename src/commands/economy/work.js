@@ -1,5 +1,5 @@
 const emoji = require('../../utils/emojis.json')
-const mongoCurrency = require('discord-mongo-currency');
+const eco = require('discord-economy');
   
 module.exports = {
     name: "work",
@@ -9,15 +9,16 @@ module.exports = {
     usage: "work",
     cooldown: 30000,
     run: async (client, message, args) => {
- 
-        const randomCoins = Math.floor(Math.random() * 99) + 1; // Random amount of coins.
-        
-        await mongoCurrency.giveCoins(message.member.id, message.guild.id, randomCoins);
-
-        let textList = [`teacher`, `programmer`, `waiter`]
-        var text = textList[Math.floor(Math.random() * textList.length)];
-        
-        
-        message.channel.send(`You worked as ${text}  and earned :money_with_wings: $${randomCoins}`)
+        var output = await eco.Work(message.author.id, {
+            failurerate: 10,
+            money: Math.floor(Math.random() * 500),
+            jobs: ['cashier', 'shopkeeper']
+          })
+          //10% chance to fail and earn nothing. You earn between 1-500 coins. And you get one of those 3 random jobs.
+          if (output.earned == 0) return message.reply('Awh, you did not do your job well so you earned nothing!')
+       
+          message.channel.send(`${message.author.username}
+You worked as a \` ${output.job} \` and earned :money_with_wings: ${output.earned}
+You now own :money_with_wings: ${output.balance}`)
     }
 }
