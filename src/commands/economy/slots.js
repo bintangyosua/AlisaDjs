@@ -10,6 +10,7 @@ module.exports = {
   run: async (client, message, args) => {
     var amount = args[0] //Coins to gamble
  
+    
     if (!amount) return message.reply('Specify the amount you want to gamble!')
  
     var output = await eco.FetchBalance(message.author.id)
