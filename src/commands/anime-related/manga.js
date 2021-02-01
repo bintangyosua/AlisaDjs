@@ -26,9 +26,8 @@ module.exports = {
       
       const embed = new MessageEmbed()
         .setTitle('Manga')
-        .setURL(result.url)
         .setThumbnail(result.image_url)
-        .addField(result.title, result.synopsis)
+        .addField(result.title, `${result.synopsis} \n[click here](${result.url})`)
         .setColor('ED80A7')
         .addFields(
           { name: 'Chapters', value: result.chapters, inline: true },
