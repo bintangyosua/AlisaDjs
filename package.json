@@ -43,6 +43,7 @@
     "simple-youtube-api": "^5.2.1",
     "something-random-on-discord": "0.0.2",
     "soundcloud-downloader": "^0.2.2",
+    "sqlite3": "^5.0.1",
     "string-progressbar": "^1.0.1",
     "tiktok-scraper": "^1.4.12",
     "twitter-lite": "^0.14.0",
