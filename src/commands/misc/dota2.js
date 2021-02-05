@@ -4,7 +4,7 @@ const { stripIndent } = require('common-tags');
 
 module.exports = {
     name: 'dota2',
-    description: 'Sends a message to the Lumina Support Server\'s feedback channel.',
+    description: 'Sends a message to the Alisa Support Server\'s feedback channel.',
     usage: 'dota2 <hero name>',
     aliases: ['dota'],
     category: '🕹   **Misc :**',

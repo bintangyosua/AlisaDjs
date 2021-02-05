@@ -4,7 +4,7 @@ const { feedbackChannelId } = require('../../utils/config.json');
 
 module.exports = {
     name: 'feedback',
-    description: 'Sends a message to the Lumina Support Server\'s feedback channel.',
+    description: 'Sends a message to the Alisa Support Server\'s feedback channel.',
     usage: 'feedback <messages>',
     aliases: ['fb'],
     category: '🕹   **Misc :**',
@@ -35,7 +35,7 @@ module.exports = {
           .setThumbnail('https://raw.githubusercontent.com/sabattle/CalypsoBot/develop/data/images/Calypso.png')
           .setDescription(oneLine`
             Successfully sent feedback!
-            Please join the [Lumina Support Server](https://discord.gg/pnYVdut) to further discuss your feedback.
+            Please join the [Alisa Support Server](https://discord.gg/pnYVdut) to further discuss your feedback.
           `) 
           .addField('Member', message.member, true)
           .addField('Message', feedback)

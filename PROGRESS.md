@@ -16,13 +16,13 @@
 |---------------|-------------------------------------------------------------------|
 | Avatar        | Get the link for the users Avatar                                 |
 | Stats         | Get the current stats of the bot                                  |
-| Help          | Get the list of commands Lumina offers                            |
+| Help          | Get the list of commands Alisa offers                            |
 | Ping          | Displays the current API latency                                  |
-| InviteMe      | Generate link to invite Lumina                                    |
+| InviteMe      | Generate link to invite Alisa                                    |
 | ServerInfo    | Get information about the server                                  |
-| Prefix        | Get Lumina prefix                                                 |
+| Prefix        | Get Alisa prefix                                                 |
 | UserInfo      | Get information about the specific members                        |
-| SupportServer | Displays the invite link to Lumina's Discord Support Server       |
+| SupportServer | Displays the invite link to Alisa's Discord Support Server       |
 
 ## 📝Ideas and Commands
 **Name:** The name of the command

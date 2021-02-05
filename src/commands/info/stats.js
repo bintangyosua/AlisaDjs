@@ -6,7 +6,7 @@ const ms = require("ms")
 
 module.exports = {
   name: "stats",
-  description: "Fetches Lumina\'s statistics.",
+  description: "Fetches Alisa\'s statistics.",
   category: "📃   **Info :**",
   aliases: ['botstats'],
   usage: "stats",
@@ -31,7 +31,7 @@ module.exports = {
       RAM Usage :: ${usedMemMb} MB 
     `;
     const embed = new MessageEmbed()
-      .setTitle('Lumina\'s Statistics')
+      .setTitle('Alisa\'s Statistics')
       .addField('Commands', `\`${message.client.commands.size}\` commands`, true)
       .addField('Aliases', `\`${message.client.aliases.size}\` aliases`, true)
       .addField('Client', `\`\`\`asciidoc\n${clientStats}\`\`\``)

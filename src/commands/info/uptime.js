@@ -15,7 +15,7 @@ module.exports = {
         const seconds = (d.seconds() == 1) ? `${d.seconds()} second` : `${d.seconds()} seconds`;
         const date = moment().subtract(d, 'ms').format('dddd, MMMM Do YYYY');
         const embed = new MessageEmbed()
-            .setTitle('Lumina\'s Uptime')
+            .setTitle('Alisa\'s Uptime')
             .setThumbnail(client.user.displayAvatarURL())
             .setDescription(`\`\`\`prolog\n${days}, ${hours}, ${minutes}, and ${seconds}\`\`\``)
             .addField('Date Launched', date) 

@@ -13,7 +13,7 @@ module.exports = {
       Users   :: ${message.client.users.cache.size}
     `;
     const embed = new MessageEmbed()
-      .setTitle('Lumina\'s Server Count')
+      .setTitle('Alisa\'s Server Count')
       .setDescription(stripIndent`\`\`\`asciidoc\n${counts}\`\`\``)
       .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

@@ -41,7 +41,7 @@ Not Random Stuff `aki eject emojify rps`
 * `$rps <rock/paper/scissors>`
 
 ### 📃 Info
-All information can be found here, such as a list of commands, someone's avatar, stats from lumina, user information, server stats and more
+All information can be found here, such as a list of commands, someone's avatar, stats from alisa, user information, server stats and more
 
 `avatar debug help inviteme ping prefix servercount servericon serverinfo stats supportserver uptime userinfo`
 * $help

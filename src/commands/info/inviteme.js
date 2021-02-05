@@ -5,7 +5,7 @@ module.exports = {
     name: 'inviteme',
     aliases: ['invite', 'invme', 'im'],
     usage: 'inviteme',
-    description: 'Generates a link you can use to invite Lumina to your own server.',
+    description: 'Generates a link you can use to invite Alisa to your own server.',
     category: "📃   **Info :**",
     run: async (client, message, args) => {
         const embed = new MessageEmbed()

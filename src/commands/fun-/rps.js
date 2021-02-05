@@ -4,7 +4,7 @@ const res = ['Scissors :v:','Rock :fist:', 'Paper :raised_hand:'];
 
 module.exports = {
     name: "rps",
-    description: "Play a game of rock–paper–scissors against Lumina!",
+    description: "Play a game of rock–paper–scissors against Alisa!",
     aliases: ["rockpaperscissors"],
     usage: "rps <rock>|<paper>|<scissors>",
     category: `🎮   **Fun :**`,
@@ -17,12 +17,12 @@ module.exports = {
         const botChoice = Math.floor(Math.random()*3);
         let result;
         if (userChoice === botChoice) result = 'It\'s a draw!';
-        else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Lumina** wins!';
+        else if (botChoice > userChoice || botChoice === 0 && userChoice === 2) result = '**Alisa** wins!';
         else result = `**${message.author.tag}** wins!`;
         const embed = new MessageEmbed()
-          .setTitle(`${message.author.tag} vs. Lumina`)
+          .setTitle(`${message.author.tag} vs. Alisa`)
           .addField('Your Choice:', res[userChoice], true)
-          .addField('Lumina\'s Choice', res[botChoice], true)
+          .addField('Alisa\'s Choice', res[botChoice], true)
           .addField('Result', result, true)
           .setFooter(message.author.tag,  message.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()

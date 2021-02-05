@@ -8,5 +8,5 @@ module.exports.run = async (client, message, args) => {
     var text = textList[Math.floor(Math.random() * textList.length)];
     client.user.setActivity(text , { type: 'WATCHING' })
   },10000) // milliseconds
-  console.log("Lumina already for vacation together")
+  console.log("Alisa already for vacation together")
 }
