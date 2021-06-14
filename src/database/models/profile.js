@@ -6,7 +6,8 @@ const reqString = {
 }
 
 const ProfileSchema = new mongoose.Schema({
-    userId: reqString,
+    _id: reqString,
+    username: reqString,
     bio: {
         type: String,
         required: false
