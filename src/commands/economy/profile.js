@@ -25,9 +25,10 @@ module.exports = {
       _id: message.author.id,
       username: user.user.tag
      })
-     
+
     const embed = new discord.MessageEmbed()
-      .setTitle(`${user.user.tag}\'s profile`)
+      .setAuthor(`${user.user.username}\'s profile`, user.user.displayAvatarURL({ dynamic: true }))
+      .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
       .addFields(
         { name: 'Credits', value: userData.balance }
         )

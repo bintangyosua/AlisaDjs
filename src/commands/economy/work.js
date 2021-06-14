@@ -4,11 +4,11 @@ const ms = require('ms');
 const emoji = require('../../utils/emojis.json');
 
 module.exports = {
-  name: 'daily',
-  aliases: ['d'],
+  name: 'work',
+  aliases: ['w'],
   category: `${emoji.diamond}   **Economy** :`,
-  usage: 'daily',
-  description: 'get your daily credits',
+  usage: 'work',
+  description: 'work and get your credits',
   run: async (client, message, args) => {
     
     let amount = 100
