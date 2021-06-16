@@ -4,7 +4,7 @@ const emoji = require('../../utils/emojis.json');
 
 module.exports = {
   name: 'profile',
-  description: 'Display profile',
+  description: 'To retrieve your profile user \`profile\`. You can also use \`$profile @mention\`',
   aliases: [' '],
   category: `${emoji.diamond}   **Economy** :`,
   usage: 'profile',

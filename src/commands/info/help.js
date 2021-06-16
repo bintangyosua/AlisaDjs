@@ -55,7 +55,7 @@ module.exports = {
       for(const [key, value] of Object.entries(com)) {
         let category = key;
 
-        let desc = "`" + value.join("`, `") + "`";
+        let desc = "`" + value.join("`  `") + "`";
 
         emx.addField(`${category.toString()}`, desc)
           

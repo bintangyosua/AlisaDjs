@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const Anilist = require('anilist.js');
-const { ANILIST_TOKEN } = require('../../utils/apikey.json');
+const { api_keys } = require('../../utils/config');
 
 module.exports = {
   name: "chara",
@@ -10,7 +10,7 @@ module.exports = {
   usage: "$chara <character name>",
   run: async (client, message, args) => {
 
-    const anilist = new Anilist.Client(ANILIST_TOKEN);
+    const anilist = new Anilist.Client(api_keys.anilist);
 
     let Text = args.join(" ");
     if (!Text) return message.channel.send(`Usage: $chara <name> \nExample: $chara shirayuki`);
