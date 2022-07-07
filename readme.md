@@ -23,7 +23,7 @@
 </div>
 
 # 🤖 Alisa (Discord Bot)
-> Alisa is a Discord Bot built with discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
+> Alisa is a Discord Bot built by discord.js & uses Command Handler from [discordjs.guide](https://discordjs.guide)
 
 
 ## Using the Official Alisa Bot
